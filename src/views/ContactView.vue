@@ -2,7 +2,6 @@
 <template>
   <div>
     <Contact />
-    
     <Footer />
   </div>
 </template>
