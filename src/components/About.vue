@@ -2,22 +2,17 @@
 <br>
 <br>
 <br>
-
-  <div>
-<h1 class="text-center mt-5">Ready to train like a pro?</h1>
-<h2 class="text-center mt-5"> Welcome to ..... Fitness</h2>
-</div>
- <div class="text-center display-4 text-danger mt-5">
-            <i class="fa-solid fa-code fa-beat" ></i>
-            </div>
-<div class="HomeBtn">
- <router-link to="/programs"><button class="custom-btn btn-2 text-center mb-1">SHOP MY PROGRAMS</button></router-link>
+<section class="about">
+<div>
+ <H1 class="about-me">About Me</H1>
 </div>
 
 <div>
-  
+<H2>Hello</H2>
 </div>
 
+
+</section>
 </template>
 <script>
 
@@ -45,6 +40,12 @@ h1{
     font-size: 100px;
 
 }
+
+
+.about-me{
+    background-image: url(https://i.postimg.cc/xjMhTrmS/die-lit.png);
+}
+
 h2{
       font-family: 'Playfair Display', serif;
 

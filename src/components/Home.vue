@@ -7,15 +7,13 @@
 <h1 class="text-center mt-5">Ready to train like a pro?</h1>
 <h2 class="text-center mt-5"> Welcome to ..... Fitness</h2>
 </div>
- <div class="text-center display-4 text-danger mt-5">
-            <i class="fa-solid fa-code fa-beat" ></i>
-            </div>
+ 
 <div class="HomeBtn">
  <router-link to="/programs"><button class="custom-btn btn-2 text-center mb-1">SHOP MY PROGRAMS</button></router-link>
 </div>
 
 <div>
-  
+
 </div>
 
 </template>

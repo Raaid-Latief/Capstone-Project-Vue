@@ -1,6 +1,7 @@
 
 <template>
   <div>
+    <Home />
     <About />
     <Footer />
   </div>
@@ -8,10 +9,14 @@
 <script>
 import About from "../components/About.vue";
 import Footer from "@/components/Footer.vue";
+import Home from "../components/Home.vue";
+
 export default {
   components: {
     About,
-    Footer
+    Footer,
+    Home,
+    
 },
 };
 </script>

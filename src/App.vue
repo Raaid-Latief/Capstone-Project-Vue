@@ -1,10 +1,20 @@
 <template>
-  <nav>
-   
+  <nav class="row">
+   <div class="col-lg-8">
     <router-link to="/home">Home</router-link> |
       <router-link to="/programs">Training Programs</router-link> |
         <router-link to="/plans">Nutrition Plans</router-link> |
           <router-link to="/contact">Contact</router-link> |
+          </div>
+
+          <div class="col-lg-4">
+            <div class="row">
+            <h3 class="col-lg-4">Login</h3>
+            <h3 class="col-lg-4">Register</h3>
+            <h3 class="col-lg-4">Cart</h3>
+            </div>
+          </div>
+
     
   </nav>
   <router-view/>
