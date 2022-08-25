@@ -1,17 +1,20 @@
 
 <template>
   <div>
-    <About />
+    <Contact />
+    
     <Footer />
   </div>
 </template>
 <script>
-import About from "../components/About.vue";
+
 import Footer from "@/components/Footer.vue";
+import Contact from "@/components/Contact.vue";
+
 export default {
   components: {
-    About,
-    Footer
+    Footer,
+    Contact
 },
 };
 </script>
