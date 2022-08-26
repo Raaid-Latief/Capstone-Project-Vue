@@ -9,20 +9,28 @@ const routes = [
   {
     path: "/programs",
     name: "programs",
-    component: () => import("../views/Programs.vue"),
+    component: () => import("../views/ProgramsView.vue"),
   },
   {
     path: "/plans",
     name: "plans",
     component: () => import("../views/Plans.vue"),
   },
- 
+  {
+    path: "/admin",
+    name: "admin",
+    component: ()=> import("../views/AdminView.vue"),
+  },
   {
     path: "/contact",
     name: "contact",
     component: () => import("../views/ContactView.vue"),
   },
-
+  {
+    path: "/login",
+    name: "login",
+    component: ()=> import("../views/LoginView.vue"),
+  },
 
 ];
 const router = createRouter({

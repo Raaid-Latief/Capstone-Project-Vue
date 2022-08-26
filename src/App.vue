@@ -5,6 +5,8 @@
       <router-link to="/programs">Training Programs</router-link> |
         <router-link to="/plans">Nutrition Plans</router-link> |
           <router-link to="/contact">Contact</router-link> |
+              <router-link to="/admin">Admin</router-link> |
+                 <router-link to="/login">Login </router-link> |
           </div>
 
           <div class="col-lg-4">

@@ -1,17 +1,18 @@
 <template>
   <div>
-    <Projects />
+    <Login />
     <Footer />
   </div>
 </template>
 <script>
-import Programs from "../components/Programs.vue";
 import Footer from "../components/Footer.vue";
+import Login from "@/components/Login.vue";
 export default {
   components: {
-    Programs,
+    
     Footer,
-  },
+    Login
+},
 };
 </script>
 <style></style>
