@@ -1,6 +1,8 @@
 
 <template>
-  
+  <br>
+  <br>
+  <br>
         <div class="container">
       <div id="login" class="d-flex justify-content-center flex-column">
         <h1 class="text-center">Login</h1>

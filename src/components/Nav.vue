@@ -14,7 +14,8 @@
                 <li><router-link to="/Programs">Programs</router-link></li>
               <li> <router-link to="/Plans">Nutrition Plans</router-link></li>
              <li> <router-link to="/Contact">Contact</router-link></li>
-              <li> <router-link to="/Login">Login</router-link></li>
+              <li> <router-link to="/Login"><i class="fa-solid fa-user"></i></router-link></li> <p class="divider">|</p>
+                <li> <router-link to="/Cart"><i class="fa-solid fa-cart-shopping"></i></router-link></li>
             </ul>
             <h1 class="logo">Do it for Zyzz</h1>
         </div>
@@ -42,6 +43,7 @@ export default {
 .html{
     font-size: 62.5%;
 }
+
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
