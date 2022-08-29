@@ -10,6 +10,7 @@
    state: {
      users: null,
      programs: null,
+     program: null,
     plans: null
   },
    getters: {
@@ -52,12 +53,22 @@
             context.commit("setPrograms", data);
         } 
     });
-    }    // let res = await axios.get(fitnessUrl+"programs");
-    // let  results   = await res.data;
-    // if(results) {
-    //   context.commit('setPrograms', results);
-
+    }    
 },
+
+
+// // Single product is same
+
+// getPrograms: async (context, id)=> {
+
+//     fetch(`${fitnessUrl}/programs/${id}`)
+//     .then((res) => res.json())
+//     .then((program) => {
+         
+//             console.log(program),
+//             context.commit("setProgram", program);
+//     });  
+// },
 
 // Login
 Login: async (context, payload) => {

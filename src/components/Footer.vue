@@ -1,5 +1,6 @@
 <template>
- <div class="footer">
+<section class="footer">
+ <div>
 
       <div class="content">
         <div class="services">
@@ -55,7 +56,7 @@
         &copy; Raaid Abdullatief 2022
       </footer>
     </div>
-  
+  </section>
 </template>
 <script>
 export default {
@@ -69,6 +70,15 @@ export default {
   box-sizing: border-box;
 }
 
+.footer{
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+margin: 0%;
+ bottom:0;
+ 
+}
+
 .footer {
   
   width: 100%;
@@ -77,6 +87,11 @@ export default {
 
 }
 
+
+h4 {
+color: #016300;
+padding-top: 30px;
+}
 
 
 
@@ -88,19 +103,19 @@ export default {
 
 .footer .content p {
   margin-bottom: 1.3rem;
-  color: rgba(0, 0, 0, 0.829);
+  color: white;
 }
 
 .footer .content a {
   text-decoration: none;
-  color: rgb(0, 0, 0, 0.829);
+  color: white;
 }
 
 .footer .content a:hover {
-  border-bottom: 1px solid #9d18cc;
+  border-bottom: 1px solid green;
 }
 .footer .content router-link:hover {
-    border-bottom: 1px solid#9d18cc;
+    border-bottom: 1px solid green;
   
 }
 .footer .content h4 {
@@ -111,12 +126,13 @@ export default {
 footer {
   text-align: center;
   margin-bottom: 2rem;
-  color: #9d18cc;
+  color: #016300;
+  padding-bottom: 30px;
 }
 
 footer hr {
   margin: 2rem 0;
-  color: #9d18cc;
+  color: green;
 }
 
 @media (max-width: 767px) {

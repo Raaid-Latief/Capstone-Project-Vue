@@ -1,4 +1,5 @@
 <template>
+<section class="nav">
   <div>
      <nav class="navbar">
         <div class="navbar-container container">
@@ -10,13 +11,16 @@
             </div>
             <ul class="menu-items">
                 <li> <router-link to="/Home">Home</router-link> </li>
-                <li><router-link to="/about">About</router-link></li>
-              <li> <router-link to="/Projects">Project Gallery</router-link></li>
+                <li><router-link to="/Programs">Programs</router-link></li>
+              <li> <router-link to="/Plans">Nutrition Plans</router-link></li>
+             <li> <router-link to="/Contact">Contact</router-link></li>
+              <li> <router-link to="/Login">Login</router-link></li>
             </ul>
-            <h1 class="logo">Raaid Abdullatief</h1>
+            <h1 class="logo">Do it for Zyzz</h1>
         </div>
     </nav>
   </div>
+  </section>
 </template>
 <script>
 export default {
@@ -51,10 +55,10 @@ export default {
 }
 
 .navbar{
-    box-shadow: 0px 5px 10px 0px #aaa;
+    box-shadow: 0px 5px 10px 0px#016300;
     position: fixed;
     width: 100%;
-    background: #fff;
+    background: black;
     color: #000;
     opacity: 0.85;
     z-index: 100;
@@ -87,17 +91,17 @@ export default {
 }
 
 .navbar a{
-    color:#18cc9d;
+    color:white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
 .navbar a:hover{
-    color:#9d18cc;
+    color: #620063;
 }
 
-@media (max-width: 768px){
+@media (max-width: 820px){
     .navbar{
         opacity: 0.95;
     }
@@ -217,5 +221,4 @@ export default {
 
 
 </style>
-
 

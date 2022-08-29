@@ -1,17 +1,39 @@
 <template>
-<br>
-<br>
-<br>
+
 <section class="about">
 <div>
- <H1 class="about-me">About Me</H1>
+ <H1 class="about-me text-center">About Me</H1>
 </div>
 
-<div>
-<H2>Hello</H2>
+<div class="row text-center">
+  <div class="col-lg-8">
+
+
+<h4>Raaid is powerbuilder and aspiring powerlifter</h4>
+<p>From starting a fitness extra-mural in highschool focused on inspiring aspiring gymrats, training pople to reach great PRs, Raaid shares the knowledge he has gathered through experience with those who share his passion for the science behind building muscle, losing fat, and gaining strength. Here are some of his accomplishments:</p>
+<p> 
+
+–      
+<br>
+–        110KG Bench Press
+<br>
+–        175KG High-Bar Squat
+<br>
+–       190KG Deadlift
+<br>
+–        Pioneered a fitness extra-mural called Body Boost in highschool focused on teaching people the importance of building muscle and perfect form on all lifts.
+<br>
+–       Aspiring powerlifter
+<br>
+–        Aspirations of completing a PhD in exercise science and meshing it with the world of technology</p>
+  </div>
+
+  <div class="col-lg-4">
+
+<img src="https://i.postimg.cc/mDfqx7Dc/My-project-10-removebg-preview-1.png" alt="dorito  back">
+
 </div>
-
-
+</div>
 </section>
 </template>
 <script>
@@ -24,10 +46,10 @@
 
 
 body{
-
+/* 
 background-image: url(https://i.postimg.cc/SQGs4nFZ/gorilla-freak-wt5jg8-Wr-Jg-unsplash.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 
   }
 
@@ -35,24 +57,34 @@ background-image: url(https://i.postimg.cc/SQGs4nFZ/gorilla-freak-wt5jg8-Wr-Jg-u
 h1{
     font-family: 'Playfair Display', serif;
 
-    color: #cc9d18;
-  text-shadow: 1px 1px 0px #ff0000;
+    color: white;
+  text-shadow: 1px 1px 0px #016300;
     font-size: 100px;
 
 }
 
 
 .about-me{
-    background-image: url(https://i.postimg.cc/xjMhTrmS/die-lit.png);
+    background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+   background-size: cover;
+     height: 100%;
+     padding-top: 300px;
+     padding-bottom: 30px;
 }
 
 h2{
       font-family: 'Playfair Display', serif;
 
-    color: #cc9d18;
-      text-shadow: 1px 1px 0px #ff0000;
+    color: white;
+      text-shadow: 1px 1px 0px #016300;
 
     font-size: 60px;
+}
+
+h4{
+  padding-top: 20px;
 }
 .HomeBtn{
   display: flex;
