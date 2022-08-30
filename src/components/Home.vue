@@ -19,6 +19,8 @@
 </script>
 <style scoped>
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100;300&display=swap');
+
 .home{
 padding-top: 150px;
 background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
@@ -30,8 +32,7 @@ background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
 
     
 h1{
-    font-family: 'Playfair Display', serif;
-
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
   text-shadow: 1px 1px 0px #016300;
     font-size: 100px;

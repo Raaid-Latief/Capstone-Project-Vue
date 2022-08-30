@@ -9,9 +9,12 @@
  export default createStore({
    state: {
      users: null,
+     user: null,
      programs: null,
      program: null,
-    plans: null
+    plans: null,
+    token: null,
+    cart: []
   },
    getters: {
     getUsers: state => state.users,
@@ -19,6 +22,9 @@
    },
    mutations: {
     
+        setUsers(state, users) {
+          state.users = users
+        },
         setUser(state, user) {
           state.user = user
         },
@@ -34,13 +40,19 @@
 
    },
    actions: {    
-     fetchUser: async (context) => {
-    let res = await axios.get(fitnessUrl+"users");
-    let results  = await res.data;
-    if(results) {
-      context.commit('setUsers', results);
-    }
-   },
+    getUsers: async (context)=> {
+
+      fetch(`${fitnessUrl}/users`)
+      .then((res) => res.json())
+      .then((data) => {
+          if (data.length === 0) {
+          console.log(data);
+          } else {
+              console.log(data);
+              context.commit("setUsers", data);
+          } 
+      });
+      },  
    getPrograms: async (context)=> {
 
     fetch(`${fitnessUrl}/programs`)
@@ -92,7 +104,7 @@ Login: async (context, payload) => {
           // Verify Route
           fetch(`${fitnessUrl}/users/users/verify`, {
             headers: {
-              "Conten-Type": "application/json",
+              "Content-Type": "application/json",
               "x-auth-token": data.token,
             },
           })

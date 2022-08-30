@@ -2,48 +2,29 @@
 <br>
 <br>
 <br>
-<div class="row">
-<div class="col-lg-4">
-<div class="card" v-for="(programs, index) in programs"
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card" v-for="(programs, index) in programs"
  :key="index">
-
-  <div class="imgBox">
-         <img :src="programs.imgURL" class="card-img-top img-fluid" :alt="programs.title">
-  </div>
-
-  <div class="contentBox">
-          <h3 class="card-title">{{programs.title}}</h3>
-  <ul class="navbar-nav">
-                    <li class="price">
-                     R<span>{{programs.price}}</span>
-                    </li>
-                </ul>
-    <a href="#" class="buy">Buy Now</a>
-  </div>
-
+				<div class="overlay"></div>
+				<div class="content">
+          <h4 class="card-title">{{programs.title}}</h4>
+          <h5 class="category">{{programs.category}}</h5>
+          <h5 class="price">R{{programs.price}}</h5>
+ <div><button class="button">Buy Now</button></div>
+				</div>
+				<div class="fav">
+					<i class="far fa-heart"></i>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-</div>
-        </div>
-        
-          
 
-    <!-- <div class="container" v-if="programs">
-        <h2 class="display-2">Programs</h2>
-        <div class="row d-flex flex-wrap ourProducts">
-            <div class="card" v-for="(programs, index) in programs"
-             :key="index">
-            <img :src="programs.imgURL" class="card-img-top img-fluid" :alt="programs.title">
-            <div class="card-body">
-                <h5 class="card-title">{{programs.title}}</h5>
-                <ul class="navbar-nav">
-                    <li>
-                        Price: R<span>{{programs.price}}</span>
-                    </li>
-                </ul>
-            </div>
-            </div>            
-        </div>
-    </div> -->
+
+
+
 </template>
 
 <script>
@@ -68,128 +49,86 @@ export default {
 
 <style scoped>
 
-@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Istok Web", sans-serif;
-}
-
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: green;
+
+	justify-content: center;
+	align-items: center;
 }
 
+.container {
+	padding: 70px 0;
+
+}
 .card {
-  position: relative;
-  width: 320px;
-  height: 480px;
-  background: #191919;
-  border-radius: 20px;
-  overflow: hidden;
+	height: 170px;
+	background: url("https://image.freepik.com/free-vector/colorful-gradient-liquid-shapes-background_23-2148250143.jpg"),
+		#ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 25px;
+	margin: 10px;
+	transition: 0.25s ease-in;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  width: 100%;
-  height: 100%;
-  background: #ffce00;
-  transform: skewY(345deg);
-  transition: 0.5s;
+.card .content {
+	position: absolute;
+	bottom: 10px;
+	left: 25px;
 }
 
-.card:hover::before {
-  top: -70%;
-  transform: skewY(390deg);
+.card .content h4 {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: #f2f2f2;
+	margin-bottom: 10px;
+	margin-top: 0;
 }
 
-.card::after {
-  content: "HI";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: 600;
-  font-size: 6em;
-  color: rgba(0, 0, 0, 0.1);
+.card .content h6 {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #f2f2f2;
+	margin-bottom: 10px;
+	margin-top: 0;
 }
 
-.card .imgBox {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5px;
-  z-index: 1;
-}
-/*
-.card .imgBox img {
-    max-width: 100%;
-    
-    transition: .5s;
+.card .fav {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	cursor: pointer;
 }
 
-.card:hover .imgBox img {
-    max-width: 50%;
-      
-}
-*/
-.card .contentBox {
-  position: relative;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 2;
+.card .fav i {
+	color: white;
 }
 
-.card .contentBox h3 {
-  font-size: 18px;
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card:hover {
+	background-position: top;
+}
+
+
+/* button */
+.button{background-color: #4CAF50; /* Green */
+  border: none;
   color: white;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.card .contentBox .price {
-  font-size: 24px;
-  color: white;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.card .contentBox .buy {
-  position: relative;
-  top: 100px;
-  opacity: 0;
-  padding: 10px 30px;
-  margin-top: 15px;
-  color: #000000;
+  padding: 13px 18px;
+  text-align: center;
   text-decoration: none;
-  background: #ffce00;
-  border-radius: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.5s;
+  display: inline-block;
+  font-size: 16px;
+border-radius: 30px;
 }
 
-.card:hover .contentBox .buy {
-  top: 0;
-  opacity: 1;
-}
-
-.mouse {
-  height: 300px;
-  width: auto;
-}
 
 
 </style>

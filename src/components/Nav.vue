@@ -1,7 +1,7 @@
 <template>
 <section class="nav">
-  <div>
-     <nav class="navbar">
+  <!-- <div> -->
+     <!-- <nav class="navbar">
         <div class="navbar-container container">
             <input type="checkbox" name="" id="">
             <div class="hamburger-lines">
@@ -14,25 +14,189 @@
                 <li><router-link to="/Programs">Programs</router-link></li>
               <li> <router-link to="/Plans">Nutrition Plans</router-link></li>
              <li> <router-link to="/Contact">Contact</router-link></li>
+             <li> <router-link to="/Users">Users</router-link></li>
               <li> <router-link to="/Login"><i class="fa-solid fa-user"></i></router-link></li> <p class="divider">|</p>
                 <li> <router-link to="/Cart"><i class="fa-solid fa-cart-shopping"></i></router-link></li>
             </ul>
             <h1 class="logo">Do it for Zyzz</h1>
         </div>
     </nav>
-  </div>
+  </div> -->
+
+  <header>
+  <h1 class="logo"><a href="#">Do it for Zyzz</a></h1>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav>
+    <ul>
+      <li> <router-link to="/Home">Home</router-link> </li>
+      <li><router-link to="/Programs">Programs</router-link></li>
+      <li><router-link to="/Plans">Nutrition Plans</router-link></li>
+      <li> <router-link to="/Contact">Contact</router-link></li>
+      <li> <router-link to="/Register">Register</router-link></li>
+      <li> <router-link to="/Users">Users</router-link></li>
+      <li> <router-link to="/Login"><i class="fa-solid fa-user"></i></router-link></li> <p class="divider">|</p>
+    </ul>
+  </nav>
+  <label for="nav-toggle" title="Show navbar" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+
   </section>
 </template>
 <script>
 export default {
   name: "Nav",
 };
+
+
 </script>
 <style scoped>
 
-
-
 *,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --white:green;
+  --pink: rgba(232, 67, 147,1.0);
+  --black: rgba(0, 0, 0, .8);
+}
+
+html{ font-size: 17px; }
+
+body{
+  font-family: 'Playfair Display', serif;
+  background-image: url(https://images.unsplash.com/photo-1543682704-15adeb008ac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=341&q=80);
+}
+
+
+header{
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  background-color: #016300;
+  border-radius: 5px;
+  z-index:1;
+
+}
+
+.logo{ 
+  margin: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a{ 
+  color: var(--pink);
+}
+
+a{ text-decoration: none; }
+
+nav{
+  position: absolute;
+  text-align: left;
+  top: 100%; 
+  left: 0;
+  background: var(--black);
+  width: 100vw;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav a{
+  color: var(--white);
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover{ border-top: 2px dotted var(--pink); }
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 5px;
+}
+
+nav li{ margin: 1.2rem; }
+
+.nav-toggle{ display: none; }
+
+.nav-toggle-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: .8rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  display: block;
+  background: purple;
+  height: 3px;
+  width: 35px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before{ bottom: 7px; }
+
+.nav-toggle-label span::after{ top: 7px;}
+
+.nav-toggle:checked ~ nav{ 
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a{
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px){
+  .nav-toggle-label,
+  .nav-toggle{
+    display: none;
+  }
+  header{
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  .logo{
+    grid-column: 2 / 3;
+  }
+  nav{
+    grid-column: 3 / 4;
+    all: unset;
+  }
+  nav a{
+    opacity: 1;
+  }
+  nav ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/* *,
 *::after,
 *::before{
     box-sizing: border-box;
@@ -103,7 +267,7 @@ export default {
     color: #620063;
 }
 
-@media (max-width: 820px){
+@media (max-width: 920px){
     .navbar{
         opacity: 0.95;
     }
@@ -220,7 +384,7 @@ export default {
   display: none;
     }
 }
-
+ */
 
 </style>
 
