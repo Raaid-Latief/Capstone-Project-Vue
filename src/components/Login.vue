@@ -37,6 +37,7 @@
 </template>
 
 <script>
+ import { mapActions } from 'vuex';
 export default {
     props: ["user.user_id"],
     computed: {

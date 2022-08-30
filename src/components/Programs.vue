@@ -5,6 +5,7 @@
 <div class="container">
 	<div class="row justify-content-center">
 		<div class="col-lg-4 col-md-6 col-sm-12">
+      <h2>Muscle and Strength Program</h2>
       <div class="card" v-for="(programs, index) in programs"
  :key="index">
 				<div class="overlay"></div>
@@ -14,9 +15,7 @@
           <h5 class="price">R{{programs.price}}</h5>
  <div><button class="button">Buy Now</button></div>
 				</div>
-				<div class="fav">
-					<i class="far fa-heart"></i>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -60,7 +59,7 @@ body {
 
 }
 .card {
-	height: 170px;
+	height: 300px;
 	background: url("https://image.freepik.com/free-vector/colorful-gradient-liquid-shapes-background_23-2148250143.jpg"),
 		#ffffff;
 	background-position: center;

@@ -80,8 +80,9 @@ header{
   position: fixed;
   width: 100vw;
   background-color: #016300;
-  border-radius: 5px;
   z-index:1;
+  height: 55px;
+  border-bottom: black
 
 }
 
@@ -90,6 +91,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 2px;
 }
 
 .logo a{ 
