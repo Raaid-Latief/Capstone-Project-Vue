@@ -108,6 +108,11 @@ export default {
 </script>
 <style scoped>
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100;300&display=swap');
+
+
 body {
   background-color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

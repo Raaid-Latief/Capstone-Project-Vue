@@ -19,7 +19,9 @@
 </script>
 <style scoped>
 
+/* Font Style */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100;300&display=swap');
+
 
 .home{
 padding-top: 150px;
@@ -32,7 +34,7 @@ background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
 
     
 h1{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
   text-shadow: 1px 1px 0px #016300;
     font-size: 100px;
@@ -40,7 +42,7 @@ h1{
 
 }
 h2{
-      font-family: 'Playfair Display', serif;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     color: white;
       text-shadow: 1px 1px 0px #016300;

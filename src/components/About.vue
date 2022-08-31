@@ -13,7 +13,7 @@
 <p>From starting a fitness extra-mural in highschool focused on inspiring aspiring gymrats, training pople to reach great PRs, Raaid shares the knowledge he has gathered through experience with those who share his passion for the science behind building muscle, losing fat, and gaining strength. Here are some of his accomplishments:</p>
 <p> 
 
-–      
+<hr class="line">   
 <br>
 –        110KG Bench Press
 <br>
@@ -26,6 +26,7 @@
 –       Aspiring powerlifter
 <br>
 –        Aspirations of completing a PhD in exercise science and meshing it with the world of technology</p>
+<hr class="line">  
   </div>
 
   <div class="col-lg-4">
@@ -40,10 +41,8 @@
 
 </script>
 <style scoped>
-
-
-
-
+/* Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100;300&display=swap');
 
 body{
 /* 
@@ -55,7 +54,7 @@ background-image: url(https://i.postimg.cc/SQGs4nFZ/gorilla-freak-wt5jg8-Wr-Jg-u
 
     
 h1{
-    font-family: 'Playfair Display', serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     color: white;
   text-shadow: 1px 1px 0px #016300;
@@ -63,6 +62,11 @@ h1{
 
 }
 
+.line {
+margin-left: 20px;
+margin-top: 50px;
+color: blue;
+}
 
 .about-me{
     background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
