@@ -110,7 +110,6 @@
     }
     
     .card::after {
-      content: "HI";
       position: absolute;
       bottom: 0;
       left: 0;

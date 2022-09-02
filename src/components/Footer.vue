@@ -76,8 +76,9 @@ export default {
   background-attachment: fixed;
 margin: 0%;
  bottom:0;
- 
 }
+ 
+
 
 .footer {
   

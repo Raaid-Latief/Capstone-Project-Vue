@@ -27,7 +27,14 @@
       <input type="email    " placeholder="email" v-model="email"/>
       <input type="password" placeholder="password" v-model="password" />
       <button type="submit" class="btn btn primary" @click.prevent="Login()">Login</button>
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
+      <p>
+          Not Registered?
+          <span
+            ><router-link href="#" to="/register" class="register"
+              >Register</router-link
+            ></span
+          >
+        </p>
     </form>
   </div>
   <div v-if="user">Welcome {{ user.fullname }}</div>

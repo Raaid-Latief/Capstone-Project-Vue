@@ -25,7 +25,9 @@
 <br>
 –       Aspiring powerlifter
 <br>
-–        Aspirations of completing a PhD in exercise science and meshing it with the world of technology</p>
+–        Aspirations of completing a PhD in exercise science and meshing it with the world of technology
+</p>
+<br>
 <hr class="line">  
   </div>
 

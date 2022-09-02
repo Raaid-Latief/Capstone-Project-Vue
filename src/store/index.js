@@ -16,26 +16,44 @@
     token: null,
     cart: []
   },
-   getters: {
-    getUsers: state => state.users,
-    getPrograms: state => state.programs
-   },
+  //  getters: {
+  //   getUsers: state => state.users,
+  //   getPrograms: state => state.programs
+  //  },
    mutations: {
     
         setUsers(state, users) {
-          state.users = users
+          state.users = users;
         },
         setUser(state, user) {
-          state.user = user
+          state.user = user;
         },
         setPrograms(state, programs) {
-          state.programs = programs
+          state.programs = programs;
         },
         setProgram(state, program) {
-            state.program = program
+            state.program = program;
           },
         setToken(state, token) {
-            state.token = token
+            state.token = token;
+          },
+
+// sort by price mutation
+
+          sortProgramsByPrice: (state) => {
+            state.programs = state.programs.sort((a, b) => {
+              if (a.price < b.price) {
+                return -1;
+              }
+              if (a.price > b.price) {
+                return 1;
+              }
+              return 0;
+            });
+            if (!state.asc) {
+              state.programs.reverse();
+            }
+            state.asc = !state.asc;
           },
 
    },
@@ -67,27 +85,6 @@
     });
     }    
 },
-
-
-// // Single product is same
-
-// getPrograms: async (context, id)=> {
-
-//     fetch(`${fitnessUrl}/programs/${id}`)
-//     .then((res) => res.json())
-//     .then((program) => {
-         
-//             console.log(program),
-//             context.commit("setProgram", program);
-//     });  
-// },
-
-// Login
-
-
-
-
-
 
 Login: async (context, payload) => {
     fetch(`${fitnessUrl}/users/login`, {
@@ -128,6 +125,31 @@ Login: async (context, payload) => {
         //   name: "products",
  });
 },
+    // REGISTER USER
+    Register: async (context, payload) => {
+      fetch(`${fitnessUrl}/users/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullname: payload.fullname,
+          email: payload.email,
+          password: payload.password,
+          joinDate: payload.joinDate,
+          role: "user",
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        });
+        alert("Registration was successful");
+    },
+
+
+
+
   modules: {
    }
  })
