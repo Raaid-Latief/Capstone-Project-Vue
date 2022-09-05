@@ -19,8 +19,9 @@
               </button>
       </div>
       <div class="programs">
-          <div class="cards text-center" v-for="program in Programs" :key="program.program_id">
-              <div class="row">
+        
+          <div class="row">
+          <div class="cards mx-auto text-center col-4"  v-for="program in Programs" :key="program.program_id">
                   <div class="col-6">
                       <img :src="program.imgURL" class="img-fluid" />
                   </div>
@@ -132,7 +133,8 @@ html, body {
     transition:0.8s;
   }
   .cards {
-    width:600px;
+    
+    width:500px;
     min-height:550px;
     display:flex;
     flex-direction: row;

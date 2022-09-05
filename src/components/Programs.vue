@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="container-fluid">
     <div class="card" v-for="program in Programs" :key="program.program_id">
         <img :src="program.imgURL" alt="">
@@ -24,4 +24,4 @@ export default {
     height: 400px;
     border: 1px solid black;
 }
-</style>
+</style> -->

@@ -3,6 +3,7 @@
   <div>
     <Home />
     <About />
+    <Testimonials />
     <Footer />
   </div>
 </template>
@@ -10,13 +11,14 @@
 import About from "../components/About.vue";
 import Footer from "@/components/Footer.vue";
 import Home from "../components/Home.vue";
+import Testimonials from "../components/Testimonials.vue";
 
 export default {
   components: {
     About,
     Footer,
     Home,
-    
+    Testimonials
 },
 };
 </script>
