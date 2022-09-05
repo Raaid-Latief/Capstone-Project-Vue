@@ -4,6 +4,10 @@
 <h1 class="text-center mt-5">Ready to train like a pro?</h1>
 <h2 class="text-center mt-5"> Welcome to ..... Fitness</h2>
 </div>
+<div class="text-center">
+<img  src="https://i.postimg.cc/DfSMW42V/My_project__11_-removebg-preview.png" alt="">
+
+</div>
  
 <div class="HomeBtn">
  <router-link to="/programs"><button class="custom-btn btn-2 text-center mb-1">SHOP MY PROGRAMS</button></router-link>
@@ -56,6 +60,16 @@ h2{
 
     font-size: 60px;
 }
+
+img
+{
+    width: auto;
+    height: 350px;
+ 
+
+  }
+
+
 .HomeBtn{
   display: flex;
   justify-content: center;

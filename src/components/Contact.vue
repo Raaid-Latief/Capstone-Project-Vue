@@ -55,11 +55,11 @@
 
 
             <div class="contact-btn row p-3">
-                <div class="col-md-6">
-                <button type="submit" class="btn btn-outline-success col-lg-6" target="_blank">Send</button>
+                <div class="col-md-6  col-sml-6">
+                <button type="submit" class="btn btn-outline-success col-lg-6 col-sml-6" target="_blank">Send</button>
            </div>
-             <div class="col-md-6">
-           <button type="button" class="btn btn-outline-danger col-lg-6" data-bs-dismiss="modal">Close</button>
+             <div class="col-md-6 col-smal-6">
+           <button type="button" class="btn btn-outline-danger col-lg-6  col-sml-6" data-bs-dismiss="modal">Close</button>
             </div>
             </div>
           
@@ -78,18 +78,21 @@
 
 <hr>
 
-<div class="row">
-  <p class="col-lg-3">
-    <i class="fa-brands fa-github"></i>
-  </p>
-  <p class="col-lg-3">
-    <i class="fa-brands fa-instagram"></i>
+<div class="row mt-5">
+  <p class="col-lg-4 col-md-4 col-sml-4">
+    <a href="https://www.instagram.com/raaid.abdullatief/?hl=en"
+              ><i class="fa-brands fa-instagram"></i></a
+            >
 </p>
-<p class="col-lg-3">
-  <i class="fa-brands fa-twitter"></i>  
+<p class="col-lg-4 col-md-4 col-sml-4">
+    <a href="https://twitter.com/?lang=en"
+              ><i class="fa-brands fa-twitter"></i></a
+            >
 </p>
-<p class="col-lg-3">
-  <i class="fa-brands fa-facebook-f"></i>
+<p class="col-lg-4 col-md-4 col-sml-4">
+    <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i></a
+            >
 </p>
 
 <hr>
@@ -115,7 +118,7 @@ export default {
 
 body {
   background-color: black;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
 
 hr{
@@ -140,12 +143,14 @@ h1{
   text-shadow: 1px 1px 0px #016300;
     font-size: 50px;
     padding-top: 10px;
+    text-shadow: 1px 1px 0px #016300;
 
 }
 
 h4{
-  font-size: 30px;
+  font-size: 20px;
   color: black;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .button{

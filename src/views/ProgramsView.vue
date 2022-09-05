@@ -21,27 +21,48 @@
       <div class="programs">
         
           <div class="row">
-          <div class="cards mx-auto text-center col-4"  v-for="program in Programs" :key="program.program_id">
+          <!-- <div class="cards mx-auto text-center col-4"  v-for="program in Programs" :key="program.program_id">
                   <div class="col-6">
                       <img :src="program.imgURL" class="img-fluid" />
                   </div>
                   <div class="col-6">
-                      <h5>{{ program.title }}</h5>
+                      <h5 class="text-center">{{ program.title }}</h5>
                       <p class="py-2"><span>Category</span>: {{ program.category }}</p>
                       <p class="py-2"><span>Price</span>: R{{ program.price }}</p>
                       <p class="py-2"><span>Description</span>: {{ program.description }}</p>
+                      <div class="row">
+                      <div class="col-md-6"><button class="btn">View More</button></div>
+                      <div class="col-md-6"><button class="btn">Add to Cart</button></div>
+                    </div>
                   </div>
-                  <!-- <div class="buttons mb-2">
-                      <router-link :to="{ name: 'program', params: { id: program.program_id} }">
-                      <button class="btn btn-lg ms-2 my-1">
-                          VIEW PRODUCT
-                      </button>
-                      </router-link>
-                      <button @click="addToCart(program)" class="btn btn-lg ms-2 my-1">
-                          ADD TO CART
-                      </button>
-                  </div> -->
-              </div>
+              </div> -->
+
+              <div class="container">
+                <div class="row">
+                <div class="cards mx-auto text-center lg-col-4 col-md-6 mb-5"  v-for="program in Programs" :key="program.program_id">
+                    <img :src="program.imgURL" class="img-fluid" />
+    <div class="card-body">
+      <div class="row">
+        <div class="card-title">
+            <h4 class="text-center">{{ program.title }}</h4>
+            <p class="py-2"><span>Price</span>: R{{ program.price }}</p>
+        </div>
+        <div class="view-btn">
+          <a href="">View Details</a>
+        </div>
+      </div>
+      <hr />
+      <p class=" desc py-2"><span></span>: {{ program.description }}</p>
+        <div class="btn">
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
           </div>
           <ProgramCard v-for="program of filteredPrograms" :key="program.program_id" :program="program" />
       </div>
@@ -101,12 +122,60 @@
   </script>
   
   <style scoped>
+
+    
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 0 auto;
+}
+.flex-container div.flex
+{
+    flex: auto;
+    width: 200px;
+    margin: 0;
+}
+.flex-container div.flex img
+{ 
+    width: 100%; 
+    height: auto;
+}
 
+h1{
+    text-shadow: 1px 1px 0px #016300;
+}
+
+.btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  .btn {
+    background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  }
+  .btn:hover {
+      background-color: #fff;
+      color: black; 
+  }
+
+
+/* 
   * {
     margin: 0;
     padding: 0;
@@ -172,21 +241,23 @@ html, body {
   span {
       color: black;
   }
-  .buttons {
+  .btn {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
   }
-  button.btn {
-      font-size: 16px;
-      background-color: black;
-      color: #fff;
-      min-height: 40px;
-      width: 200px;
-      padding: 5px;
-      text-align: center;
+  .btn {
+    background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
   }
-  button.btn:hover {
+  .btn:hover {
       background-color: #fff;
       color: black; 
   }
@@ -203,9 +274,6 @@ html, body {
       color: black;
       text-shadow: 2px 2px 2px white;
   }
-  .fa-arrow-up-arrow-down{
-    color: aqua;
-  }
   @media screen and (max-width: 600px) {
       .buttons {
           display: flex;
@@ -213,5 +281,5 @@ html, body {
           justify-content: center;
           align-items: center;
       }
-  }
+  } */
   </style>

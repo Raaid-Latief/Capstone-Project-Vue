@@ -44,26 +44,31 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua;
+    background-color:  #9d18cc;
     position: fixed;
     z-index: 9999;
+    box-shadow: #9d18cc;
+
   }
 .nav-links{
   text-decoration: none;
   padding: 2px;
+  color: black;
   
 }
 
 a:link,
 a:visited {
-  color: #5D6063;
+  color: black;
   text-decoration: none;
-  padding: 3px;
+  padding: 10px;
+  margin-left: 5px;
   
 }
 
 a:hover {
-  text-decoration: underline;
+ text-decoration: underline;
   color: green;
+  text-shadow: 1px 1px 0px black;
 }
 </style>

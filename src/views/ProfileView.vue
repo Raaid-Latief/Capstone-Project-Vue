@@ -1,5 +1,11 @@
 <template>
+  <br>
+  <br>
+
+<div class="login">Hello</div>
     <div class="container-fluid">
+
+      <div class="login">Hello</div>
       <h1>MY PROFILE<span class="text-center ms-2"><i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-exclamation ms-2"></i></span></h1>
       <div class="row my-5 mx-4">
       
@@ -53,6 +59,10 @@ html, body {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+  }
+
+  .login{
+    color: black;
   }
   
   .container-fluid {
