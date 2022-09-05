@@ -75,19 +75,11 @@ export default {
   background-repeat: no-repeat;
   background-attachment: fixed;
 margin: 0%;
- bottom:0;
-}
- 
-
-
-.footer {
-  
-  width: 100%;
+ width: 100%;
   bottom: 0;
   left: 0;
-
 }
-
+ 
 
 h4 {
 color: #016300;

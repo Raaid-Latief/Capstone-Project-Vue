@@ -20,4 +20,11 @@ export default {
 },
 };
 </script>
-<style></style>
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  
+</style>

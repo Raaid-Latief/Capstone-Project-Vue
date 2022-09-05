@@ -1,8 +1,8 @@
 <template>
 <br>
 <br>
-<br>
-<br>
+<h1 class="text-center mt-5">Contact Raaid</h1>
+
  <div class="contact row text-center">
  <div class="contact-form col-lg-6">
   <div class="p-3">
@@ -119,7 +119,10 @@ body {
 }
 
 hr{
-  margin: 2rem 0;
+margin-left: 20px;
+margin-top: 50px;
+color: blue;
+
 }
 
 .fa-brands{
@@ -128,6 +131,16 @@ hr{
 
 .copyright{
   font-size: 20px;
+}
+
+
+h1{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+  text-shadow: 1px 1px 0px #016300;
+    font-size: 50px;
+    padding-top: 10px;
+
 }
 
 h4{

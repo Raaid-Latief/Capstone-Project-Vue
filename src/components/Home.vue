@@ -23,12 +23,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100;300&display=swap');
 
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 .home{
 padding-top: 150px;
 background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
      background-size: cover;
+     overflow-x: hidden;
 
   }
 

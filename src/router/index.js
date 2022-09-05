@@ -41,6 +41,21 @@ const routes = [
     name: "register",
     component: ()=> import("../views/RegisterView.vue"),
   },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: () => import('../views/ProfileView.vue')
+  },
+  {
+    path: '/adminProgram',
+    name: 'adminProgram',
+    component: () => import('../views/AdminProgramsView.vue')
+  },
+  {
+    path: '/adminUser',
+    name: 'adminUser',
+    component: () => import('../views/AdminUsersView.vue')
+  }
 
 
 ];
