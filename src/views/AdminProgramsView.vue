@@ -3,9 +3,7 @@
     <br>
     <div class="container-fluid">
       <h1>
-        WELCOME ADMIN<span class="text-white ms-2"
-          ><i class="fa-solid fa-exclamation"></i
-          ><i class="fa-solid fa-exclamation ms-2"></i
+        Program ADMIN<span class="text-white ms-2"
         ></span>
       </h1>
       <div class="admin my-5">
@@ -314,7 +312,7 @@
   
   .container-fluid h1 {
     color: black;
-    text-shadow: 2px 3px 4px black;
+    text-shadow: 2px 3px 4px #016300;
   }
   
   table {

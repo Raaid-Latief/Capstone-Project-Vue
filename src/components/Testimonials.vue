@@ -3,8 +3,8 @@
     <section class="testimonials">
 <h1 class="text-center mt-5">Some transformations from close peers</h1>
 
-<div class="d-flex">
-<div class="flip-card">
+<div class=" row d-flex">
+<div class="flip-card col-lg-6 col-sml-12">
   <div class="flip-card-inner">
     <div class="flip-card-face">
       <img src="https://images.unsplash.com/photo-1515896769750-31548aa180ed?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjE4NzAyNDM&ixlib=rb-1.2.1&q=80" alt="Avatar" style="width:500px;height:300px;">
@@ -16,7 +16,7 @@
   <div>hello</div>
 </div>
 
-<div class="flip-card">
+<div class="flip-card col-lg-6 col-sml-12">
   <div class="flip-card-inner">
     <div class="flip-card-face">
       <img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjE4NzE1NTQ&ixlib=rb-1.2.1&q=80" style="width:500px;height:300px;">

@@ -11,7 +11,7 @@
 
 <h4>Raaid is powerbuilder and aspiring powerlifter</h4>
 <p>From starting a fitness extra-mural in highschool focused on inspiring aspiring gymrats, training pople to reach great PRs, Raaid shares the knowledge he has gathered through experience with those who share his passion for the science behind building muscle, losing fat, and gaining strength. Here are some of his accomplishments:</p>
-<p> 
+
 
 <hr class="line">   
 <br>
@@ -26,20 +26,22 @@
 –       Aspiring powerlifter
 <br>
 –        Aspirations of completing a PhD in exercise science and meshing it with the world of technology
-</p>
+
 <br>
 <hr class="line">  
   </div>
 
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-md-6 col-sml-12">
 
-<img src="https://i.postimg.cc/mDfqx7Dc/My-project-10-removebg-preview-1.png" alt="dorito  back">
+<p><img src="https://i.postimg.cc/mDfqx7Dc/My-project-10-removebg-preview-1.png" alt="dorito back" ></p>
 
 </div>
 </div>
 </section>
 </template>
 <script>
+
+  AOS.init();
 
 </script>
 <style scoped>

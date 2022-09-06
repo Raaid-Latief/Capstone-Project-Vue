@@ -71,7 +71,7 @@ export default {
 }
 
 .footer{
-  background-color: gray;
+  background-color: #47CC18;
   background-repeat: no-repeat;
   background-attachment: fixed;
 margin: 0%;

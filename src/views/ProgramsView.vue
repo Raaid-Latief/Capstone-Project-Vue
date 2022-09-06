@@ -21,22 +21,6 @@
       <div class="programs">
         
           <div class="row">
-          <!-- <div class="cards mx-auto text-center col-4"  v-for="program in Programs" :key="program.program_id">
-                  <div class="col-6">
-                      <img :src="program.imgURL" class="img-fluid" />
-                  </div>
-                  <div class="col-6">
-                      <h5 class="text-center">{{ program.title }}</h5>
-                      <p class="py-2"><span>Category</span>: {{ program.category }}</p>
-                      <p class="py-2"><span>Price</span>: R{{ program.price }}</p>
-                      <p class="py-2"><span>Description</span>: {{ program.description }}</p>
-                      <div class="row">
-                      <div class="col-md-6"><button class="btn">View More</button></div>
-                      <div class="col-md-6"><button class="btn">Add to Cart</button></div>
-                    </div>
-                  </div>
-              </div> -->
-
               <div class="container">
                 <div class="row">
                 <div class="cards mx-auto text-center lg-col-4 col-md-6 mb-5"  v-for="program in Programs" :key="program.program_id">
@@ -46,20 +30,27 @@
         <div class="card-title">
             <h4 class="text-center">{{ program.title }}</h4>
             <p class="py-2"><span>Price</span>: R{{ program.price }}</p>
+            <p class="py-2"><span>Category</span>: {{ program.category }}</p>
         </div>
-        <div class="view-btn">
-          <a href="">View Details</a>
-        </div>
+        <div class="buttons mb-2">
+                    <router-link :to="{ name: 'program', params: { id: program.program_id} }">
+                    <button class="btn btn-lg ms-2 my-1">
+                        VIEW PRODUCT
+                    </button>
+                  </router-link>
       </div>
       <hr />
       <p class=" desc py-2"><span></span>: {{ program.description }}</p>
         <div class="btn">
           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
+
     </div>
   </div>
 </div>
 </div>
+</div>
+
 
 
 

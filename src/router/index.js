@@ -12,9 +12,10 @@ const routes = [
     component: () => import("../views/ProgramsView.vue"),
   },
   {
-    path: "/users",
-    name: "users",
-    component: () => import("../views/UsersView.vue"),
+    path: '/program/:id',
+    name: 'program',
+    component: () => import('../views/SingleProgramView.vue'),
+    props: true,
   },
   {
     path: "/plans",
@@ -55,8 +56,12 @@ const routes = [
     path: '/adminUser',
     name: 'adminUser',
     component: () => import('../views/AdminUsersView.vue')
-  }
-
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: () => import('../views/CartView.vue')
+  },
 
 ];
 const router = createRouter({

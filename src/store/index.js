@@ -112,33 +112,48 @@ export default createStore({
                 });
               });
           }
-          //   });
-          // router.push({
-          //   name: "products",
    });
    },
 
-  // REGISTER USER
-  Register: async (context, payload) => {
+   Register: async (context, payload) => {
     fetch(`${fitnessUrl}/users/register`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      method: 'POST',
       body: JSON.stringify({
-        fullname: payload.fullname,
-        email: payload.email,
-        password: payload.password,
-        joinDate: payload.joinDate,
-        role: "user",
+          fullname: payload.fullname,
+          email: payload.email,
+          password: payload.password, 
+          join_date: "2023-06-03",
+          user_type: "user",
       }),
+    headers: {
+      "Content-type": "application/json",
+    },
     })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
-      alert("Registration was successful");
-  },
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+      },
+
+  // REGISTER USER
+  // Register: async (context, payload) => {
+  //   fetch(`${fitnessUrl}/users/register`, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       fullname: payload.fullname,
+  //       email: payload.email,
+  //       password: payload.password,
+  //       joinDate: payload.joinDate,
+  //       role: "user",
+  //     }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //     });
+  //     alert("Registration was successful");
+  // },
 
 
 
@@ -179,15 +194,14 @@ export default createStore({
            context.commit("setPrograms", data);
        } 
    });
-   }    
-},
+   },  
+
 
  // GET A SINGLE PROGRAM BY ID
  getProgram: async (context, id) => {
   fetch(`${fitnessUrl}/programs/${id}`)
     .then((res) => res.json())
-    .then((product) => {
-      console.log(product), context.commit("setProgram", program);
+    .then((program) => {context.commit("setProgram", program);
     });
 },
 
@@ -287,7 +301,7 @@ export default createStore({
     .then((json) => context.commit("setUser", json));
   },
 
-
+},
 
 
  modules: {

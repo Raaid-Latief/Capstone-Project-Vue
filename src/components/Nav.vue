@@ -9,8 +9,8 @@
     <router-link to="/Programs">Programs</router-link>
      <router-link to="/Contact">Contact</router-link>
      <router-link to="/Profile">Account</router-link>
-     <!-- <router-link to="/Users">Users</router-link> -->
      <router-link to="/AdminProgram">Admin</router-link>
+     <router-link to="/Cart">Cart</router-link>
        <router-link to="/Login"><i class="fa-solid fa-user"></i></router-link>
       </div>
     
