@@ -119,7 +119,7 @@ export default createStore({
                 context.commit("setUser", data.user);
                 alert(data.user.email);
                 router.push({
-                  name: "programs",
+                  name: "profile",
                 });
               });
           }
@@ -133,8 +133,8 @@ export default createStore({
           fullname: payload.fullname,
           email: payload.email,
           password: payload.password, 
-          join_date: "2023-06-03",
-          user_type: "user",
+          joinDate: "2023-06-09",
+          role: "user",
       }),
     headers: {
       "Content-type": "application/json",

@@ -31,12 +31,15 @@
           <span
             ><router-link href="#" to="/register" class="register"
               >Reset</router-link
-            ></span
-          >
+            ></span>
+            
         </p>
     </form>
   </div>
-  <div class="text-center" v-if="user">Welcome back {{ user.fullname }}!</div>
+  <div class="text-center" v-if="user">Welcome back {{ user.fullname }}!
+    <router-link class="text-center" to="/Profile">View your Account</router-link>
+  </div>
+  
 </div>
 
 
