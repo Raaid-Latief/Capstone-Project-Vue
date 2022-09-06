@@ -12,10 +12,9 @@ export default createStore({
     user: null,
     programs: null,
     program: null,
-   plans: null,
    token: null,
    asc: true,
-   cart: []
+   cart: [],
  },
  //  getters: {
  //   getUsers: state => state.users,
@@ -38,6 +37,18 @@ export default createStore({
        setToken(state, token) {
            state.token = token;
          },
+         setCart(state, cart) {
+          state.cart = cart;
+        },
+        updateCart: (state, product) => {
+          state.cart.push(product);
+        },
+        removeFromCart: (state, cart) => {
+          state.cart = cart;
+        },
+        clearCart: (state, cart) => {
+          state.cart = cart;
+        },
 
 // sort by price mutation
 
@@ -204,6 +215,44 @@ export default createStore({
     .then((program) => {context.commit("setProgram", program);
     });
 },
+
+    // CART
+    // SHOW CART
+    getCart: async (context) => {
+      fetch(`${fitnessUrl}/programs`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.length === 0) {
+            console.log(data);
+          } else {
+            context.commit("setPrograms", data);
+          }
+        });
+    },
+
+    // ADD PRODUCT TO CART
+    addToCart: async (context, id) => {
+      console.log(id);
+      alert("ADDED PROGRAM TO CART");
+    },
+
+    // DELETE PRODUCT FROM CART
+    deleteFromCart: async (context, id) => {
+      const newCart = context.state.cart.filter(
+        (program) => program.program_id != id
+      );
+      context.commit("removeFromCart", newCart);
+    },
+
+    // CHECKOUT
+    deleteCart: async (context, id) => {
+      const emptyCart = context.state.cart.filter(
+        (program) => program.id != id
+      );
+      context.commit("clearCart", emptyCart);
+      alert("ORDER SUCCESSFULLY PLACED");
+    },
+
 
 
   // DELETE PROGRAM USING ID

@@ -41,10 +41,13 @@
       </div>
       <hr />
       <p class=" desc py-2"><span></span>: {{ program.description }}</p>
-        <div class="btn">
+        <!-- <div class="btn">
           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+        </div> -->
 
+ <button @click="addToCart(program)" class="btn btn-lg ms-2 my-1">
+                        ADD TO CART
+                    </button>
     </div>
   </div>
 </div>
@@ -63,6 +66,7 @@
   <script>
   import { mapActions, mapState } from "vuex";
   export default {
+    props: ["program_id"],
       // name: 'ProgramView',
       // components: {
       //     ProgramCard,
@@ -99,8 +103,8 @@
               this.$store.dispatch("getProgram");
           },
           ...mapActions(["getProgram"]),
-          addToCart(item) {
-              this.$store.commit("updateCart", item);
+          addToCart(program) {
+              this.$store.commit("updateCart", program);
           },
           sortProgram() {
               this.$store.commit("sortProgramsByName");
