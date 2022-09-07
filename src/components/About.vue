@@ -7,7 +7,7 @@
 </div>
 
 <div class="box row text-center">
-  <div class="pr col-lg-8">
+  <div class="pr col-lg-6 col-md-8 col-sml-12">
 
 
 <h4>Raaid is powerbuilder and aspiring powerlifter</h4>
@@ -33,7 +33,7 @@
 <hr class="line">  
   </div>
 
-  <div class="raaid-img col-lg-4 col-md-6 col-sml-6">
+  <div class="raaid-img col-lg-6 col-md-4 col-sml-12">
 
 <p class="deadlift"><img src="https://i.postimg.cc/sD02hJx9/My-project-16.jpg" alt="dorito back" ></p>
 
@@ -60,14 +60,14 @@ background-image: url(https://i.postimg.cc/SQGs4nFZ/gorilla-freak-wt5jg8-Wr-Jg-u
 
   .pr{
     background-color: #0E4204;
-  width: 1400px;
+  width: 1000px;
   /* border-right: 5px solid #0F8600; */
   
   }
 
   .raaid-img{
     background-color: #0E4204;
-  width: 900px;
+  width: 500px;
   /* border-left: 5px solid #0F8600; */
 
   }
@@ -99,7 +99,8 @@ color: #0F8600;
 
 .deadlift{
   padding-top: 16px;
-border-radius: 2px;
+height: fit-content;
+margin-top: 38px;
 
 }
 
