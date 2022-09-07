@@ -31,7 +31,7 @@
 <hr class="line">  
   </div>
 
-  <div class="col-lg-4 col-md-6 col-sml-12">
+  <div class="col-lg-4 col-md-6 col-sml-6">
 
 <p><img src="https://i.postimg.cc/mDfqx7Dc/My-project-10-removebg-preview-1.png" alt="dorito back" ></p>
 

@@ -14,7 +14,7 @@
                   <option value="hypertrophy">Hypertrophy</option>
                   <option value="powerbuilding">Powerbuilding</option>
               </select>
-              <button class="btn ms-3 my-2" @click="sortProgram">
+              <button class="btn ms-3 my-2" @click="sortPrograms">
                   SORT BY NAME
               </button>
       </div>
