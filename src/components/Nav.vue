@@ -43,22 +43,22 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:  #9d18cc;
+    background-color:  #0E4204;
     position: fixed;
     z-index: 9999;
-    box-shadow: #9d18cc;
+
 
   }
 .nav-links{
   text-decoration: none;
   padding: 2px;
-  color: black;
+  color: white;
   
 }
 
 a:link,
 a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 10px;
   margin-left: 5px;

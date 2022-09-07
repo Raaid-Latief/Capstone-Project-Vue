@@ -3,46 +3,26 @@
     <section class="testimonials">
 <h1 class="text-center mt-5 mb-5">Some transformations from close peers</h1>
 
-<div class=" row d-flex">
-<!-- <div class="flip-card col-lg-6 col-sml-12">
-  <div class="flip-card-inner">
-    <div class="flip-card-face">
-      <img src="https://images.unsplash.com/photo-1515896769750-31548aa180ed?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjE4NzAyNDM&ixlib=rb-1.2.1&q=80" alt="Avatar" style="width:500px;height:300px;">
-    </div>
-    <div class="flip-card-behind la">
-      <h1>Los Angeles</h1>
-    </div>
-  </div>
-  <div>hello</div>
-</div> -->
-
-<!-- <div class="flip-card col-lg-6 col-sml-12">
-  <div class="flip-card-inner">
-    <div class="flip-card-face">
-      <img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjE4NzE1NTQ&ixlib=rb-1.2.1&q=80" style="width:500px;height:300px;">
-    </div>
-    <div class="flip-card-behind hawai">
-      <h1>Hawai</h1>
-    </div>
-  </div>
-</div> -->
 
 
+<div class="box1 mb-5">
 <div class="row text-center">
   <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/CLktcYj5/My-project-13.jpg" alt=""></h1></div>
   <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/VkPgvC0L/My-project-14.jpg" alt=""></h1></div>
-  <div class="test col-lg-6"></div>
+  <div class="test1 col-lg-6"></div>
+</div>
 </div>
 
+<div class="box2">
 <div class="row text-center">
-  <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/NjWCZMkX/IMG-20220616-WA0005.jpg" alt=""></h1></div>
+  <div class="col-lg-3"> <h1 class="img"><figure><img src="https://i.postimg.cc/NjWCZMkX/IMG-20220616-WA0005.jpg" alt=""><figcaption>monkey</figcaption></figure></h1></div>
   <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/mZPRHdg2/My-project-15.jpg" alt=""></h1></div>
-  <div class="test col-lg-6"></div>
+  <div class="test2 col-lg-6"></div>
+</div>
 </div>
 
 
 
-</div>
 
     </section>
     </template>
@@ -66,10 +46,30 @@ img {
 
 }
 
-.test{
-  background-color: #9d18cc;
+.box1{
+  /* background-color: #0E4204; */
+padding: 16px;
+}
+
+
+
+.box2{
+  background-color: #1B8008;
+padding: 16px;
+}
+
+.test1{
+  background-color: #1B8008;
   width: 900px;
-  border: 5px solid green;
+  /* border: 5px solid green; */
+  padding-right: 20px;
+  margin: 20px;
+  border-radius: 1%;
+}
+.test2{
+  background-color: #0E4204;
+  width: 900px;
+  /* border: 5px solid green; */
   padding-right: 20px;
   margin: 20px;
   border-radius: 1%;

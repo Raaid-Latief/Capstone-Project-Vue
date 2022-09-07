@@ -40,7 +40,7 @@
                   </router-link>
       </div>
       <hr />
-      <p class=" desc py-2"><span></span>: {{ program.description }}</p>
+      
         <!-- <div class="btn">
           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
         </div> -->

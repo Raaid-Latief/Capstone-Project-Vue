@@ -1,12 +1,13 @@
 <template>
 
 <section class="about">
+
 <div>
  <H1 class="about-me text-center">About Me</H1>
 </div>
 
-<div class="row text-center">
-  <div class="col-lg-8">
+<div class="box row text-center">
+  <div class="pr col-lg-8">
 
 
 <h4>Raaid is powerbuilder and aspiring powerlifter</h4>
@@ -31,7 +32,7 @@
 <hr class="line">  
   </div>
 
-  <div class="col-lg-4 col-md-6 col-sml-6">
+  <div class="raaid-img col-lg-4 col-md-6 col-sml-6">
 
 <p><img src="https://i.postimg.cc/mDfqx7Dc/My-project-10-removebg-preview-1.png" alt="dorito back" ></p>
 
@@ -56,29 +57,42 @@ background-image: url(https://i.postimg.cc/SQGs4nFZ/gorilla-freak-wt5jg8-Wr-Jg-u
 
   }
 
+  .pr{
+    background-color: #0E4204;
+  width: 1400px;
+  /* border-right: 5px solid #0F8600; */
+  
+  }
+
+  .raaid-img{
+    background-color: #0E4204;
+  width: 900px;
+  /* border-left: 5px solid #0F8600; */
+
+  }
+
     
 h1{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #1B8008;
+  text-shadow: 2px 1px 0px black;
 
-    color: white;
-  text-shadow: 1px 1px 0px #016300;
-    font-size: 100px;
-
+font-size: 60px;
 }
 
 .line {
 margin-left: 20px;
 margin-top: 50px;
-color: blue;
+color: #0F8600;
 }
 
 .about-me{
-    background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
+    /* background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg); */
     background-repeat: no-repeat;
   background-attachment: fixed;
    background-size: cover;
      height: 100%;
-     padding-top: 300px;
+     padding-top: 30px;
      padding-bottom: 30px;
 }
 
@@ -92,12 +106,14 @@ h2{
 }
 
 h4{
+  color: white;
   padding-top: 20px;
   font-size: 40px;
 }
 
 p{
-  font-size: 26px;
+  font-size: 24px;
+  color: white;
 }
 .HomeBtn{
   display: flex;

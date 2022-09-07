@@ -1,12 +1,14 @@
 <template>
 <section class="home">
-  <div>
+  <div class="row">
+  <div class="headings col-lg-8 col-md-8 col-sml-12">
 <h1 class="text-center mt-5">Ready to train like a pro?</h1>
 <h2 class="text-center mt-5"> Welcome to ..... Fitness</h2>
 </div>
-<div class="text-center">
+<div class="col-lg-4 col-md-4 text-center">
 <img  src="https://i.postimg.cc/DfSMW42V/My_project__11_-removebg-preview.png" alt="">
-
+<p class="tag">Veni, Vidi, Vici</p>
+</div>
 </div>
  
 <div class="HomeBtn">
@@ -26,6 +28,7 @@
 /* Font Style */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100;300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 
 html, body {
     max-width: 100%;
@@ -35,7 +38,6 @@ html, body {
 
 .home{
 padding-top: 150px;
-background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
      background-size: cover;
@@ -46,28 +48,37 @@ background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg);
     
 h1{
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-  text-shadow: 1px 1px 0px #016300;
-    font-size: 100px;
-    padding-top: 10px;
+    color: #1B8008;
+  text-shadow: 2px 1px 0px black;
+    font-size: 120px;
 
 }
 h2{
       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    color: white;
-      text-shadow: 1px 1px 0px #016300;
+    color: #1B8008;
+      text-shadow: 2px 1px 0px black;
 
     font-size: 60px;
+}
+
+.headings{
+  padding-bottom: 100px;
 }
 
 img
 {
     width: auto;
-    height: 350px;
+    height: 450px;
  
 
   }
+
+.tag{
+  font-family: 'Tangerine', cursive;
+font-size: 130px;
+padding-top: 30px;
+}
 
 
 .HomeBtn{
@@ -75,17 +86,10 @@ img
   justify-content: center;
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 100px;
 
 }
 
-.buttons-coll {
-  width: 90%;
-  margin: 50px auto;
-  text-align: center;
-}
-button {
-margin: 0px;
-}
 .custom-btn {
   padding: 10px 25px;
   font-family: "Roboto", sans-serif;
@@ -96,7 +100,7 @@ margin: 0px;
   transition: all 1.1s ease;
   position: relative;
   display: inline-block;
-  color: white;
+  color: #1B8008;
 }
 .btn-2 {
   border: none;

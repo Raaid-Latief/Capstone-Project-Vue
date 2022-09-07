@@ -8,24 +8,30 @@
               GO BACK
           </button>
       </router-link>
+    
       <div v-for="program in program" :key="program.program_id" class="cards mb-5 mt-5">
           <div class="row">
-              <div class="image">
+              <div class="image text-center col-lg-6">
                   <img :src="program.imgURL" class="img-fluid" />
               </div>
-              <div class="details mt-5">
+              <div class="details mt-5 col-lg-6">
                   <h5>{{ program.title }}</h5>
                   <p class="py-2"><span>Category</span>: {{ program.category }}</p>
-                  <p class="py-2"><span>Price</span>: R{{ program.price }}</p>
-                  <p class="py-2"><span>Description</span>: {{ program.description }}</p>
+                 
+                  <p class="py-2"><span></span>: {{ program.description }}</p>
               </div>
-              <div class="buttons mb-2">
+              <div class="row">
+              <div class="buttons mt-2 text-center col-lg-6">
                   <button @click="addToCart(program)" class="btn btn-lg ms-2 my-1">
                       ADD TO CART
                   </button>
-              </div>
+                </div>
+                <div class="price col-lg-6">
+                <p class="py-2"><span></span>   R{{ program.price }}</p>
+             </div> 
+            </div>
+           </div>
           </div>
-      </div>
     </div>
   </template>
   
@@ -57,28 +63,33 @@
   
   .container-fluid {
       display: block;
-      margin: 0 auto;
+     padding-bottom: 30px;
+      background-color: aqua;
+      width: auto;
+      
+
   }
   
   .image img {
     width: 400px;
     min-height: 300px;
-    object-fit:cover;
+    padding-top: 40px;
+    /* object-fit:cover;
     -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
     transform-origin:center;
     transform:perspective(800px) rotateY(25deg);
-    transition:0.8s;
+    transition:0.8s; */
   }
   
   .cards {
-    width:500px;
-    min-height:550px;
-    display: block;
+    width: auto;
+    min-height: 500px;
+    display: flex;
     margin: 0 auto;
     flex-direction: row;
     justify-content:center;
     align-items:center;
-    gap:20px;
+    gap: 20px;
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.4);
   }
@@ -111,9 +122,18 @@
       color: black; 
   }
   
+.price{
+    font-size: 30px;
+}
+
   .details h5 {
       color: black;
-      text-shadow: 2px 2px 2px white;
+        font-size: 35px;
+      padding-left: 20px;
+  }
+
+  .py-2{
+    padding-left: 20px;
   }
   
   @media screen and (max-width: 556px) {
