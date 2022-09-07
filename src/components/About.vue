@@ -16,17 +16,18 @@
 
 <hr class="line">   
 <br>
-–        110KG Bench Press
+
+  <p>  110KG Bench Press </p>
 <br>
-–        175KG High-Bar Squat
+  <p>    175KG High-Bar Squat</p>
 <br>
-–       190KG Deadlift
+  <p>     190KG Deadlift</p>
 <br>
-–        Pioneered a fitness extra-mural called Body Boost in highschool focused on teaching people the importance of building muscle and perfect form on all lifts.
+ <p>       Pioneered a fitness extra-mural called Body Boost in highschool focused on teaching people the importance of building muscle and perfect form on all lifts.</p>
 <br>
-–       Aspiring powerlifter
+ <p>     Aspiring powerlifter</p>
 <br>
-–        Aspirations of completing a PhD in exercise science and meshing it with the world of technology
+  <p>      Aspirations of completing a PhD in exercise science and meshing it with the world of technology</p>
 
 <br>
 <hr class="line">  
@@ -34,7 +35,7 @@
 
   <div class="raaid-img col-lg-4 col-md-6 col-sml-6">
 
-<p><img src="https://i.postimg.cc/mDfqx7Dc/My-project-10-removebg-preview-1.png" alt="dorito back" ></p>
+<p class="deadlift"><img src="https://i.postimg.cc/sD02hJx9/My-project-16.jpg" alt="dorito back" ></p>
 
 </div>
 </div>
@@ -94,6 +95,12 @@ color: #0F8600;
      height: 100%;
      padding-top: 30px;
      padding-bottom: 30px;
+}
+
+.deadlift{
+  padding-top: 16px;
+border-radius: 2px;
+
 }
 
 h2{

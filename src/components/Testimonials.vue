@@ -7,16 +7,16 @@
 
 <div class="box1 mb-5">
 <div class="row text-center">
-  <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/CLktcYj5/My-project-13.jpg" alt=""></h1></div>
-  <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/VkPgvC0L/My-project-14.jpg" alt=""></h1></div>
+  <div class="col-lg-3"> <h1 class="img"><figure><img src="https://i.postimg.cc/CLktcYj5/My_project_(13).jpg" alt=""><figcaption>Before</figcaption></figure></h1></div>
+  <div class="col-lg-3"> <h1 class="img"><figure><img src="https://i.postimg.cc/VkPgvC0L/My_project_(14).jpg" alt=""><figcaption>After</figcaption></figure></h1></div>
   <div class="test1 col-lg-6"></div>
 </div>
 </div>
 
 <div class="box2">
 <div class="row text-center">
-  <div class="col-lg-3"> <h1 class="img"><figure><img src="https://i.postimg.cc/NjWCZMkX/IMG-20220616-WA0005.jpg" alt=""><figcaption>monkey</figcaption></figure></h1></div>
-  <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/mZPRHdg2/My-project-15.jpg" alt=""></h1></div>
+  <div class="col-lg-3"> <h1 class="img"><figure><img src="https://i.postimg.cc/NjWCZMkX/IMG-20220616-WA0005.jpg" alt=""><figcaption>Before</figcaption></figure></h1></div>
+  <div class="col-lg-3"> <h1 class="img"><figure><img src="https://i.postimg.cc/mZPRHdg2/My_project_(15).jpg" alt=""><figcaption>After</figcaption></figure></h1></div>
   <div class="test2 col-lg-6"></div>
 </div>
 </div>
@@ -41,8 +41,11 @@
 img {
   width: auto;
     height: 600px;
-    border: 4px solid black;
-    box-shadow: #9d18cc;
+    border:2px solid black;
+      box-shadow: 10px 10px 5px black;
+      -moz-box-shadow: 10px 10px 5px black;
+      -webkit-box-shadow: 10px 10px 5px black;
+      -khtml-box-shadow: 10px 10px 5px black;
 
 }
 

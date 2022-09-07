@@ -37,6 +37,7 @@ html, body {
 
 
 .home{
+  background-image: url(https://i.postimg.cc/SNMDHk5B/My-project-19.jpg);
 padding-top: 150px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -85,7 +86,7 @@ padding-top: 30px;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 50px;
+
   margin-bottom: 100px;
 
 }
@@ -93,7 +94,7 @@ padding-top: 30px;
 .custom-btn {
   padding: 10px 25px;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   background: transparent;
   outline: none !important;
   cursor: pointer;
@@ -104,8 +105,8 @@ padding-top: 30px;
 }
 .btn-2 {
   border: none;
-  border-bottom: 2px solid #016300;
-  border-left: 2px solid #016300;
+  border-bottom: 4px solid #016300;
+  border-left: 4px solid #016300;
 }
 .btn-2:before,
 .btn-2:after {
@@ -118,11 +119,11 @@ padding-top: 30px;
 }
 .btn-2:before {
   height: 0%;
-  width: 2px;
+  width: 4px;
 }
 .btn-2:after {
   width: 0%;
-  height: 2px;
+  height: 3px;
 }
 .btn-2:hover:before {
   height: 100%;

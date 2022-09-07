@@ -5,11 +5,11 @@
   <nav>
     <h1 class="logo"><img src="https://i.postimg.cc/DfSMW42V/My_project__11_-removebg-preview.png" alt=""></h1>
     <div class="nav-links">
-     <router-link to="/Home">Home</router-link> 
+     <router-link to="/">Home</router-link> 
     <router-link to="/Programs">Programs</router-link>
-     <router-link to="/Contact">Contact</router-link>
+     <router-link to="/Contact"><i class="fa-solid fa-address-book"></i></router-link>
      <router-link to="/AdminProgram">Admin</router-link>
-     <router-link to="/Cart">Cart</router-link>
+     <router-link to="/Cart"><i class="fa-solid fa-cart-shopping"></i></router-link>
        <router-link to="/Login"><i class="fa-solid fa-user"></i></router-link>
       </div>
     
@@ -34,18 +34,21 @@ export default {
     width: auto;
     height: 74px;
     padding-left: 30px;
+   
 
   }
 
   nav{
     width: 100%;
-    height: 70px;
+    height: 95px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color:  #0E4204;
     position: fixed;
     z-index: 9999;
+    padding-right: 100px;
+
 
 
   }
