@@ -4,7 +4,7 @@
     <br>
   
     <div class="login-page">
-    <form onsubmit="Login(event)" class="text-center my-3">
+    <form onsubmit="Register(event)" class="text-center my-3">
       <input type="text" placeholder="name" v-model="fullname"/>
       <input type="email    " placeholder="email" v-model="email"/>
       <input type="password" placeholder="password" v-model="password" />

@@ -3,23 +3,12 @@
  <div>
 
       <div class="content">
-        <div class="services">
-          <h4>Services</h4>
-          <p><a href="#">Web Development</a></p>
-          <p><a href="#">DevOps</a></p>
-          <p><a href="#">Web Design</a></p>
-          <p><a href="#">UI/UX Design</a></p>
-        </div>
         <div class="social-media">
           <h4>Social</h4>
+      
           <p>
-            <a href="https://www.linkedin.com/in/raaid-abdullatief-35b3a3208/"
-              ><i class="fab fa-linkedin"></i> Linkedin</a
-            >
-          </p>
-          <p>
-            <a href="https://github.com/Raaid-Latief"
-              ><i class="fab fa-github"></i> Github</a
+            <a href="https://twitter.com/?lang=en"
+              ><i class="fa-brands fa-twitter"></i> Twitter</a
             >
           </p>
           <p>
@@ -28,16 +17,16 @@
             >
           </p>
           <p>
-            <a href="https://www.instagram.com/raaid.abdullatief/?hl=en"
-              ><i class="fab fa-instagram"></i> Instagram</a
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i> Facebook</a
             >
           </p>
         </div>
         <div class="links">
           <h4>Quick links</h4>
           <router-link to="/home"><p><a href="#">Home</a></p></router-link>
-     <router-link to="/about"><p><a href="#">About</a></p></router-link>
-          <router-link to="/projects"><p><a href="#">Gallery</a></p></router-link>
+     <router-link to="/programs"><p><a href="#">Programs</a></p></router-link>
+          <router-link to="/contact"><p><a href="#">Contact</a></p></router-link>
         </div>
         <div class="details">
           <h4 class="address">Address</h4>
