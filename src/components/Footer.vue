@@ -27,6 +27,7 @@
           <router-link to="/home"><p><a href="#">Home</a></p></router-link>
      <router-link to="/programs"><p><a href="#">Programs</a></p></router-link>
           <router-link to="/contact"><p><a href="#">Contact</a></p></router-link>
+          <router-link to="/Cart"><p><a href="#">Cart</a></p></router-link>
         </div>
         <div class="details">
           <h4 class="address">Address</h4>
