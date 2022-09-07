@@ -93,6 +93,11 @@ h2{
 
 h4{
   padding-top: 20px;
+  font-size: 40px;
+}
+
+p{
+  font-size: 26px;
 }
 .HomeBtn{
   display: flex;

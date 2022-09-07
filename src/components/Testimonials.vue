@@ -1,7 +1,7 @@
 <template>
 
     <section class="testimonials">
-<h1 class="text-center mt-5">Some transformations from close peers</h1>
+<h1 class="text-center mt-5 mb-5">Some transformations from close peers</h1>
 
 <div class=" row d-flex">
 <!-- <div class="flip-card col-lg-6 col-sml-12">
@@ -29,13 +29,17 @@
 
 
 <div class="row text-center">
-  <div class="col-lg-3">Hello</div>
-  <div class="col-lg-3">Hello</div>
-  <div class="col-lg-6">Hello</div>
-
-
-
+  <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/CLktcYj5/My-project-13.jpg" alt=""></h1></div>
+  <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/VkPgvC0L/My-project-14.jpg" alt=""></h1></div>
+  <div class="test col-lg-6"></div>
 </div>
+
+<div class="row text-center">
+  <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/NjWCZMkX/IMG-20220616-WA0005.jpg" alt=""></h1></div>
+  <div class="col-lg-3"> <h1 class="img"><img src="https://i.postimg.cc/mZPRHdg2/My-project-15.jpg" alt=""></h1></div>
+  <div class="test col-lg-6"></div>
+</div>
+
 
 
 </div>
@@ -53,6 +57,24 @@
     .d-flex {
   display: flex;
 }
+
+img {
+  width: auto;
+    height: 600px;
+    border: 4px solid black;
+    box-shadow: #9d18cc;
+
+}
+
+.test{
+  background-color: #9d18cc;
+  width: 900px;
+  border: 5px solid green;
+  padding-right: 20px;
+  margin: 20px;
+  border-radius: 1%;
+}
+
 
 .flip-card {
   background-color: transparent;
