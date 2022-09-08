@@ -13,15 +13,14 @@
         <button
           type="button"
           class="btn btn-primary ms-5"
-          data-bs-toggle="modal"
-          data-bs-target="#addingModal"
+          data-target="#myModal" data-toggle="modal" data-backdrop="static" data-keyboard="false"
         >
           <i class="fa-solid fa-circle-plus"></i><span class="ms-2">ADD</span>
         </button>
         <!-- Modal -->
         <div
           class="modal fade"
-          id="addingModal"
+          id="myModal" data-keyboard="false" data-backdrop="static"
           tabindex="-1"
           aria-labelledby="addingModalLabel"
           aria-hidden="true"

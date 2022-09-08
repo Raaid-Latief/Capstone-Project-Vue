@@ -25,7 +25,7 @@
 					<td>{{ user.email }}</td>
 					<td>{{ user.joinDate }}</td>
                     <td>{{ user.role }}</td>
-					<td><button class="btn" @click="deleteUser(user.user_id)"><i class="fa-solid fa-trash"></i><span class="ms-2">DELETE</span></button><UpdateModal :product="product" /></td>
+					<td><button class="btn" @click="deleteUser(user.user_id)"><i class="fa-solid fa-trash"></i><span class="ms-2">DELETE</span></button><UpdateModal :program="program" /></td>
                     <td>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" :data-bs-target="`#modal${index}`">
@@ -78,18 +78,29 @@ export default {
     computed: {
             users() {
                 return this.$store.state.users
-            }
+            },
+            user() {
+            return this.$store.state.user;
+        },         
+         token() {
+            return this.$store.state.token;
+        },
         },
     mounted() {
-            this.$store.dispatch('getUsers');
-        },
+        this.$store.dispatch("getUsers");
+    },
         methods: {
-            getPrograms() {
-                this.store.dispatch("getUser");
-            },
-            ...mapActions(["getUser"]),
-        }
-    }
+         deleteUser(id) {
+            return this.$store.dispatch("deleteUser",  {
+            id:id,
+            token:this.token
+            });
+        },
+         updateUser(id) {
+            return this.$store.dispatch("updateUser", id);
+        },
+    },
+};
 </script>
 
 <style scoped>

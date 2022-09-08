@@ -11,7 +11,7 @@
 
 
 <h4>Raaid is powerbuilder and aspiring powerlifter</h4>
-<p>From starting a fitness extra-mural in highschool focused on inspiring aspiring gymrats, training pople to reach great PRs, Raaid shares the knowledge he has gathered through experience with those who share his passion for the science behind building muscle, losing fat, and gaining strength. Here are some of his accomplishments:</p>
+<p>From starting a fitness extra-mural in highschool focused on inspiring aspiring gymrats, training people to reach great PRs, Raaid shares the knowledge he has gathered through experience with those who share his passion for the science behind building muscle, losing fat, and gaining strength. Here are some of his accomplishments:</p>
 
 
 <hr class="line">   
@@ -69,6 +69,7 @@ background-image: url(https://i.postimg.cc/SQGs4nFZ/gorilla-freak-wt5jg8-Wr-Jg-u
     background-color: #0E4204;
   width: 500px;
   /* border-left: 5px solid #0F8600; */
+    
 
   }
 
@@ -95,12 +96,17 @@ color: #0F8600;
      height: 100%;
      padding-top: 30px;
      padding-bottom: 30px;
+     
 }
 
 .deadlift{
   padding-top: 16px;
 height: fit-content;
 margin-top: 38px;
+box-shadow: 10px 10px 5px black;
+      -moz-box-shadow: 10px 10px 5px black;
+      -webkit-box-shadow: 10px 10px 5px black;
+      -khtml-box-shadow: 10px 10px 5px black;
 
 }
 
@@ -131,54 +137,7 @@ p{
 
 }
 
-.buttons-coll {
-  width: 90%;
-  margin: 50px auto;
-  text-align: center;
-}
-button {
-margin: 0px;
-}
-.custom-btn {
-  padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  background: transparent;
-  outline: none !important;
-  cursor: pointer;
-  transition: all 1.1s ease;
-  position: relative;
-  display: inline-block;
-  color: #18cc9d;
-}
-.btn-2 {
-  border: none;
-  border-bottom: 2px solid #18cc9d;
-  border-left: 2px solid #18cc9d;
-}
-.btn-2:before,
-.btn-2:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  background: #18cc9d;
-  transition: all 0.3s ease;
-}
-.btn-2:before {
-  height: 0%;
-  width: 2px;
-}
-.btn-2:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-2:hover:before {
-  height: 100%;
-}
-.btn-2:hover:after {
-  width: 100%;
-}
+
 
 </style>
 

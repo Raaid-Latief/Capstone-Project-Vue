@@ -84,9 +84,7 @@ export default createStore({
           state.asc = !state.asc;
         },
   },
-
-  
-
+ 
   actions: {    
 
     Login: async (context, payload) => {
@@ -117,7 +115,7 @@ export default createStore({
               .then((res) => res.json())
               .then((data) => {
                 context.commit("setUser", data.user);
-                alert(data.user.email);
+                alert("Logged in successfully");
                 router.push({
                   name: "profile",
                 });
@@ -142,31 +140,10 @@ export default createStore({
     })
     .then((response) => response.json())
     .then((data) => console.log(data));
+    alert("User successfully registered, you may now sign in");
       },
 
-  // REGISTER USER
-  // Register: async (context, payload) => {
-  //   fetch(`${fitnessUrl}/users/register`, {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({
-  //       fullname: payload.fullname,
-  //       email: payload.email,
-  //       password: payload.password,
-  //       joinDate: payload.joinDate,
-  //       role: "user",
-  //     }),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     });
-  //     alert("Registration was successful");
-  // },
-
-
+// Get all users
 
    getUsers: async (context)=> {
 
@@ -192,7 +169,7 @@ export default createStore({
         });
     },
 
-
+// Get all programs
   getPrograms: async (context)=> {
 
    fetch(`${fitnessUrl}/programs`)
@@ -256,9 +233,13 @@ export default createStore({
 
 
   // DELETE PROGRAM USING ID
-  deleteProgram: async (context, id) => {
-    fetch(`${fitnessUrl}/programs/${id}`, {
+  deleteProgram: async (context, payload) => {
+    fetch(`${fitnessUrl}/programs/${payload.id}`, {
       method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        "x-auth-token": payload.token,
+      },
     })
     .then((response) => response.json())
     .then(() => context.dispatch("getPrograms"));
@@ -319,9 +300,14 @@ export default createStore({
   },
 
   // DELETE USER USING ID
-  deleteUser: async (context, id) => {
-    fetch(`${fitnessUrl}/users/` + id, {
+  deleteUser: async (context, payload) => {
+    console.log(payload);
+    fetch(`${fitnessUrl}/users/` +  payload.id ,{
       method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        "x-auth-token": payload.token,
+      },
     })
     .then((response) => response.json())
     .then(() => context.dispatch("getUser"));

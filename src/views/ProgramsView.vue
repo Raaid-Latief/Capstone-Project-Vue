@@ -1,6 +1,7 @@
 <template>
     <br>
     <br>
+
     <div class="container-fluid">
 <h1 class="text-center mt-5">Choose from our wide selection of carefully curated Programs</h1>
       <div class="functions my-5">
@@ -38,16 +39,14 @@
                         VIEW PRODUCT
                     </button>
                   </router-link>
+                  
+ <button @click="addToCart(program)" class="btn btn-lg ms-2 my-1">
+                        ADD TO CART
+                    </button> 
       </div>
       <hr />
       
-        <!-- <div class="btn">
-          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-        </div> -->
-
- <button @click="addToCart(program)" class="btn btn-lg ms-2 my-1">
-                        ADD TO CART
-                    </button>
+      
     </div>
   </div>
 </div>
@@ -58,20 +57,30 @@
 
 
           </div>
-          <ProgramCard v-for="program of filteredPrograms" :key="program.program_id" :program="program" />
-      </div>
+          <div v-if="filteredPrograms">
+            <ProgramCard v-for="program of filteredPrograms" :key="program.program_id" :program="program" />
+        </div>
+        <div v-else class="loader">
+        </div>
+    </div>
+    </div>
+
+    <div>
+<Footer />
     </div>
   </template>
   
+  
   <script>
   import { mapActions, mapState } from "vuex";
+import Footer from "@/components/Footer.vue";
   export default {
     props: ["program_id"],
-      // name: 'ProgramView',
-      // components: {
-      //     ProgramCard,
-      // },
-      computed: {
+    // name: 'ProgramView',
+    // components: {
+    //     ProgramCard,
+    // },
+    computed: {
         Programs() {
             return this.$store.state.programs;
         },
@@ -79,16 +88,17 @@
             return this.$store.state.programs?.filter((program) => {
                 let isMatch = true;
                 if (!program.title?.toLowerCase().includes(this.search.toLowerCase()))
-                isMatch = false;
-                if (this.category !== "all" && program.category !== this.category) isMatch = false;
+                    isMatch = false;
+                if (this.category !== "all" && program.category !== this.category)
+                    isMatch = false;
                 return isMatch;
             });
         },
     },
-      mounted() {
-          this.$store.dispatch("getPrograms");
-      },
-      data() {
+    mounted() {
+        this.$store.dispatch("getPrograms");
+    },
+    data() {
         return {
             search: "",
             category: "all",
@@ -98,22 +108,23 @@
             description: "",
         };
     },
-      methods: {
-          getProgram() {
-              this.$store.dispatch("getProgram");
-          },
-          ...mapActions(["getProgram"]),
-          addToCart(program) {
-              this.$store.commit("updateCart", program);
-          },
-          sortProgram() {
-              this.$store.commit("sortProgramsByName");
-          },
-          sortPrograms() {
-              this.$store.commit("sortProgramsByPrice");
-          },
-      }
-  }
+    methods: {
+        getProgram() {
+            this.$store.dispatch("getProgram");
+        },
+        ...mapActions(["getProgram"]),
+        addToCart(program) {
+            this.$store.commit("updateCart", program);
+        },
+        sortProgram() {
+            this.$store.commit("sortProgramsByName");
+        },
+        sortPrograms() {
+            this.$store.commit("sortProgramsByPrice");
+        },
+    },
+    components: { Footer }
+}
   </script>
   
   <style scoped>
@@ -169,112 +180,29 @@ h1{
       color: black; 
   }
 
-
-/* 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-  }
-
-  h1{
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
-  text-shadow: 1px 1px 0px #016300;
-    font-size: 50px;
-    padding-top: 10px;
+img{
+  border:2px solid black;
+      box-shadow: 10px 10px 5px black;
+      -moz-box-shadow: 10px 10px 5px black;
+      -webkit-box-shadow: 10px 10px 5px black;
+      -khtml-box-shadow: 10px 10px 5px black;
 
 }
-  .col-6 img {
-    width: 300px;
-    height: 400px;
-    object-fit:cover;
-    
-    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-    
-    transform-origin:center;
-    transform:perspective(800px) rotateY(25deg);
-    transition:0.8s;
-  }
-  .cards {
-    
-    width:500px;
-    min-height:550px;
-    display:flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    border: 1px solid black;
-    margin: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
 
-    
-  }
-  .cards:hover img {
-    opacity:0.3;
-  }
-  .cards img:hover {
-    transform:perspective(800px)       rotateY(0deg);
-    opacity:1;
-  }
-  .products {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin: 20px;
-      padding: 10px;
-  }
-  .col-6 {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      padding: 10px;
-  }
-  span {
-      color: black;
-  }
-  .btn {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-  }
-  .btn {
-    background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+/* loader */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
 
-  }
-  .btn:hover {
-      background-color: #fff;
-      color: black; 
-  }
-  input {
-      min-width: 700px;
-      padding: 10px;
-  }
-  select {
-      width: 300px;
-      height: 49px;
-      padding: 10px;
-  }
-  .col-6 h5 {
-      color: black;
-      text-shadow: 2px 2px 2px white;
-  }
-  @media screen and (max-width: 600px) {
-      .buttons {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-  } */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
   </style>

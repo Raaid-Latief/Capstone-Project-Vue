@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import LoginView from '@/views/LoginView.vue'
 const routes = [
   {
     path: "/",
@@ -17,11 +16,7 @@ const routes = [
     component: () => import('../views/SingleProgramView.vue'),
     props: true,
   },
-  {
-    path: "/plans",
-    name: "plans",
-    component: () => import("../views/Plans.vue"),
-  },
+  
   {
     path: "/admin",
     name: "admin",

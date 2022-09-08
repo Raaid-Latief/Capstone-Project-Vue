@@ -1,24 +1,28 @@
 <template>
+    <br>
+    <br>
+    <br>
+    <br>
   <div class="container-fluid">
-    <h1>REGISTER<span class="text-white ms-2"><i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-exclamation ms-2"></i></span></h1>
+    <h1 class="text-center">REGISTER<span class="text-white ms-2"><i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-exclamation ms-2"></i></span></h1>
     <div class="output my-5">
         <form>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                            <input type="text" v-model="fullname" class="form-control"  id="exampleFormControlInput1" placeholder="John Doe">
+                            <input type="text" v-model="fullname" class="form-control"  id="exampleFormControlInput1" placeholder="your username">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Email</label>
-                            <input type="email" v-model="email" class="form-control" required id="exampleFormControlInput1" placeholder="johndoe23@gmail.com">
+                            <input type="email" v-model="email" class="form-control" required id="exampleFormControlInput1" placeholder="enter your email">
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Password</label>
-                        <input type="password" v-model="password" class="form-control" required id="exampleFormControlInput1" placeholder="password1">
+                        <input type="password" v-model="password" class="form-control" required id="exampleFormControlInput1" placeholder="password">
                     </div>
 
                 <button type="submit" @click.prevent="Register()" class="btn">Sign up</button>
@@ -27,18 +31,19 @@
         <div class="mt-5">
         <p>
           Already got an account?
-          <span
-            ><router-link href="#" to="/login" class="login"
-              >Log In</router-link
-            ></span
+          <span><p class="login-btn"><router-link href="#" to="/login" class="login">Log In</router-link></p></span
           >
         </p>
       </div>
     </div>
   </div>
+  <div>
+<Footer />
+    </div>
 </template>
 
 <script>
+import Footer from '@/components/Footer.vue';
 export default {
     data() {
         return {
@@ -53,9 +58,10 @@ export default {
                 fullname: this.fullname,
                 email: this.email,
                 password: this.password,
-            })
+            });
         }
-    }
+    },
+    components: { Footer }
 }
 </script>
 
@@ -74,23 +80,20 @@ export default {
     text-shadow: 2px 3px 4px white; 
 }
 .output {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: green;
   border: solid 3px black;
   margin: 20px;
   padding: 10px;
   width: 300px;
-  height: 700px;
+  height: 300px;
   box-shadow: 5px 5px 5px #000122;
   /* text-align: center; */
   display: block;
   margin: 0 auto;
-  border-radius: 30px;
+  border-radius: 2px;
 }
 .btn-primary {
-    color: #fff;
-    background-color: black;
-    border-color: #fff;
-    width: 200px;
+color: blue;
 }
 .btn-primary:hover {
     color: black;
@@ -98,7 +101,8 @@ export default {
     border-color: black;
     width: 200px;
 }
-.login {
+.login-btn {
+    color: white;
     text-decoration: none;
 }
 </style>

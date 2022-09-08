@@ -79,6 +79,8 @@ img
   font-family: 'Tangerine', cursive;
 font-size: 130px;
 padding-top: 30px;
+color: white;
+text-shadow: 2px 2px black;
 }
 
 

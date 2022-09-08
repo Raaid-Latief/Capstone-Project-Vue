@@ -1,10 +1,6 @@
 
 <template>
-  <br>
-  <br>
-      <div class="login-page">
-
-        
+   <div class="login-page">
   <div class="form">
     <h1>Sign In</h1>
     <form class="register-form">
@@ -36,9 +32,11 @@
         </p>
     </form>
   </div>
+  <div class="welcome">
   <div class="text-center" v-if="user">Welcome back {{ user.fullname }}!
     <router-link class="text-center" to="/Profile">View your Account</router-link>
   </div>
+</div>
   
 </div>
 
@@ -46,7 +44,7 @@
 </template>
 
 <script>
- import { mapActions } from 'vuex';
+
 export default {
     props: ["user.user_id"],
     computed: {
@@ -101,7 +99,7 @@ h1{
   background: #FFFFFF;
   max-width: 360px;
   margin: 0 auto 100px;
-  padding: 45px;
+  padding: 40px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -148,7 +146,7 @@ h1{
 .container {
   position: relative;
   z-index: 1;
-  max-width: 300px;
+  max-width: 500px;
   margin: 0 auto;
 }
 .container:before, .container:after {
@@ -187,6 +185,10 @@ body {
   -moz-osx-font-smoothing: grayscale;      
 }
 
+
+.welcome{
+  font-size: 50px;
+}
 
 
 
