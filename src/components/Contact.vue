@@ -138,12 +138,10 @@ color: blue;
 
 
 h1{
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
-  text-shadow: 1px 1px 0px #016300;
-    font-size: 50px;
-    padding-top: 10px;
-    text-shadow: 1px 1px 0px #016300;
+  color: #1B8008;
+      text-shadow: 2px 1px 0px black;
+    font-size: 70px; 
+    padding: 8px; 
 
 }
 

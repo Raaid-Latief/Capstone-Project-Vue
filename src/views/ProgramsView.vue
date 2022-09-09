@@ -29,9 +29,9 @@
     <div class="card-body">
       <div class="row">
         <div class="card-title">
-            <h4 class="text-center">{{ program.title }}</h4>
-            <p class="py-2"><span>Price</span>: R{{ program.price }}</p>
-            <p class="py-2"><span>Category</span>: {{ program.category }}</p>
+            <h4 class="title text-center">{{ program.title }}</h4>
+            <p class="price py-2"> R{{ program.price }}</p>
+            <p class="category py-2"><span>Category</span>: {{ program.category }}</p>
         </div>
         <div class="buttons mb-2">
                     <router-link :to="{ name: 'program', params: { id: program.program_id} }">
@@ -156,7 +156,11 @@ html, body {
 }
 
 h1{
-    text-shadow: 1px 1px 0px #016300;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1B8008;
+  text-shadow: 2px 1px 0px black;
+    font-size: 65px;
+    padding: 20px;
 }
 
 .btn {
@@ -176,17 +180,34 @@ h1{
 
   }
   .btn:hover {
-      background-color: #fff;
-      color: black; 
+      background-color:  #9d18cc;
+      color: white; 
   }
 
 img{
+
+    width: auto;
+    height: 800px;
   border:2px solid black;
       box-shadow: 10px 10px 5px black;
       -moz-box-shadow: 10px 10px 5px black;
       -webkit-box-shadow: 10px 10px 5px black;
       -khtml-box-shadow: 10px 10px 5px black;
 
+}
+
+.title{
+    color: #1B8008;
+      text-shadow: 2px 1px 0px black;
+    font-size: 45px; 
+    padding: 8px;
+}
+.price{
+    font-size: 40px;
+}
+
+.category{
+    font-size: 30px;
 }
 
 /* loader */

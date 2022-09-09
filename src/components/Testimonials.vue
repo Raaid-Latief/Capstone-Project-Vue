@@ -4,30 +4,33 @@
  
 <h1 class="text-center mt-5 mb-5">Some transformations from close peers</h1>
 <div class="box2 pt-5">
-<h2 class="socrates text-center">"It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.”         -Socrates</h2>
+     
 
 
 
 
 <div class="row text-center">
-  <div class="col-lg-6"> <h1 class="shrink"><figure><img src="https://i.postimg.cc/CLktcYj5/My_project_(13).jpg" alt=""><figcaption>Before</figcaption></figure></h1></div>
-  <div class="col-lg-6"> <h1 class="grow"><figure><img src="https://i.postimg.cc/VkPgvC0L/My_project_(14).jpg" alt=""><figcaption>After</figcaption></figure></h1></div>
+  <div class="col-lg-4"> <h1 class="shrink"><figure><img src="https://i.postimg.cc/CLktcYj5/My_project_(13).jpg" alt=""><figcaption>2021</figcaption></figure></h1></div>
+  <div class="col-lg-4"><h4 class="socrates text-center">"It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable.” - Socrates </h4></div>
+  <div class="col-lg-4"> <h1 class="grow"><figure><img src="https://i.postimg.cc/VkPgvC0L/My_project_(14).jpg" alt=""><figcaption>2022</figcaption></figure></h1></div>
 
 </div>
 
 
 
 <div class="row text-center">
-  <div class="col-lg-6"> <h1 class="shrink"><figure><img src="https://i.postimg.cc/NjWCZMkX/IMG-20220616-WA0005.jpg" alt=""><figcaption>Before</figcaption></figure></h1></div>
-  <div class="col-lg-6"> <h1 class="grow"><figure><img src="https://i.postimg.cc/mZPRHdg2/My_project_(15).jpg" alt=""><figcaption>After</figcaption></figure></h1></div>
+  <div class="col-lg-4"> <h1 class="shrink"><figure><img src="https://i.postimg.cc/NjWCZMkX/IMG-20220616-WA0005.jpg" alt=""><figcaption>2020</figcaption></figure></h1></div>
+  <div class="col-lg-4"><h4 class="socrates text-center">"Listen, everywhere you look in this world, wherever there is light, there will always be shadows to be found as well. As long as there is a concept of victors, the vanquished will also exist.” - Madara Uchiha</h4></div>
+  <div class="col-lg-4"> <h1 class="grow"><figure><img src="https://i.postimg.cc/mZPRHdg2/My_project_(15).jpg" alt=""><figcaption>2022</figcaption></figure></h1></div>
  
 </div>
 
 
 
 <div class="row text-center">
-  <div class="col-lg-6"> <h1 class="shrink"><figure><img src="https://i.postimg.cc/1Xxwm57f/My-project-20.jpg" alt=""><figcaption>Before</figcaption></figure></h1></div>
-  <div class="col-lg-6"> <h1 class="grow"><figure><img src="https://i.postimg.cc/VNCX3C43/My-project-21.jpg" alt=""><figcaption>After</figcaption></figure></h1></div>
+  <div class="col-lg-4"> <h1 class="shrink"><figure><img src="https://i.postimg.cc/1Xxwm57f/My-project-20.jpg" alt=""><figcaption>2021</figcaption></figure></h1></div>
+  <div class="col-lg-4"><h4 class="socrates text-center">"We go jim !!” - Lex Little </h4></div>
+  <div class="col-lg-4"> <h1 class="grow"><figure><img src="https://i.postimg.cc/VNCX3C43/My-project-21.jpg" alt=""><figcaption>2022</figcaption></figure></h1></div>
  
 </div>
 
@@ -46,15 +49,24 @@
     /* Font Style */
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100;300&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Tangerine&display=swap');
 
     .d-flex {
   display: flex;
 }
 .socrates{
-  font-family: 'Tangerine', cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 50px;
 color: white;
 text-shadow: 2px 2px black;
+}
+
+h1{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1B8008;
+  text-shadow: 2px 1px 0px black;
+    font-size: 80px;
+    padding: 20px;
 }
 
 img {
@@ -71,6 +83,8 @@ img {
 
 .grow img{
 transition: 1s ease;
+width: auto;
+height: 650px;
 }
 
 .grow img:hover{
@@ -84,6 +98,8 @@ transition: 1s ease;
 
 .shrink img {
 transition: 1s ease;
+width: auto;
+height: 500px;
 }
 
 .shrink img:hover{
@@ -101,7 +117,7 @@ padding: 16px;
 
 
 .box2{
-  background-image: linear-gradient(to right bottom, #89ac7b, #6a905c, #4d753f, #2f5b22, #0e4204);
+  background-image: linear-gradient(to bottom, #0b3603, #0c3903, #0c3c04, #0d3f04, #0e4204);
 padding: 16px;
 }
 

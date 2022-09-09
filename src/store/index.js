@@ -118,7 +118,7 @@ export default createStore({
             })
               .then((res) => res.json())
               .then((data) => {
-                context.commit("setUser", data.user);
+               if ( context.commit("setUser", data.user));
                 alert("Logged in successfully");
                 router.push({
                   name: "profile",
@@ -127,6 +127,12 @@ export default createStore({
           }
    });
    },
+  //  .then((res) => res.json())
+  //  .then((data) => {
+  //   else {( context.commit("setUser", data.user));
+  //    alert("Password incorrect, try again");}},
+   
+
 
    Register: async (context, payload) => {
     fetch(`${fitnessUrl}/users/register`, {

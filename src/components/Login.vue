@@ -15,14 +15,6 @@
             ></span
           >
         </p>
-        <p class="mt-3">
-          Forgot Password?
-          <span
-            ><router-link href="#" to="/register" class="register"
-              >Reset</router-link
-            ></span>
-            
-        </p>
     </form>
   </div>
   <div class="welcome">
@@ -118,7 +110,7 @@ h1{
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background:  #9d18cc;
 }
 .form .message {
   margin: 15px 0 0;

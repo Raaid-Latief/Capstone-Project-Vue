@@ -70,7 +70,7 @@ a:visited {
 
 a:hover {
  text-decoration: underline;
-  color: green;
+  color:  #9d18cc;
   text-shadow: 1px 1px 0px black;
 }
 </style>
