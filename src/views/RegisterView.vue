@@ -1,41 +1,6 @@
 <template>
     <br>
     <br>
-<!-- 
-  <div class="container-fluid">
-    <h1 class="text-center">REGISTER<span class="text-white ms-2"><i class="fa-solid fa-exclamation"></i><i class="fa-solid fa-exclamation ms-2"></i></span></h1>
-    <div class="output my-5">
-        <form>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                            <input type="text" v-model="fullname" class="form-control"  id="exampleFormControlInput1" placeholder="your username">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email</label>
-                            <input type="email" v-model="email" class="form-control" required id="exampleFormControlInput1" placeholder="enter your email">
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Password</label>
-                        <input type="password" v-model="password" class="form-control" required id="exampleFormControlInput1" placeholder="password">
-                    </div>
-
-                <button type="submit" @click.prevent="Register()" class="btn">Sign up</button>
-                </div>
-            </form>
-        <div class="mt-5">
-        <p>
-          Already got an account?
-          <span><p class="login-btn"><router-link href="#" to="/login" class="login">Log In</router-link></p></span
-          >
-        </p>
-      </div>
-    </div>
-  </div> -->
 
   <div class="login-page">
   <div class="form">

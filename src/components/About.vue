@@ -6,8 +6,8 @@
  <H1 class="about-me text-center">About Me</H1>
 </div>
 
-<div class="box row text-center">
-  <div class="pr col-lg-6 col-md-8 col-sml-12">
+<div class="row">
+  <div class="me col-lg-6 text-center">
 
 
 <h4>Raaid is powerbuilder and aspiring powerlifter</h4>
@@ -35,7 +35,7 @@
 
   <div class="raaid-img col-lg-6 col-md-4 col-sml-12">
 
-<p class="deadlift"><img src="https://i.postimg.cc/sD02hJx9/My-project-16.jpg" alt="dorito back" ></p>
+<p><img class="image-fluid" src="https://i.postimg.cc/sD02hJx9/My-project-16.jpg" alt="dorito back" ></p>
 
 </div>
 </div>
@@ -51,33 +51,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@100;300&display=swap');
 
 body{
-/* 
-background-image: url(https://i.postimg.cc/SQGs4nFZ/gorilla-freak-wt5jg8-Wr-Jg-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-
   }
 
-  .pr{
-    background-color: #0E4204;
-  width: 1000px;
-  /* border-right: 5px solid #0F8600; */
+ 
   
-  }
-
-  .raaid-img{
-    background-color: #0E4204;
-  width: 500px;
-  /* border-left: 5px solid #0F8600; */
-    
-
-  }
 
     
 h1{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 color: #1B8008;
-  text-shadow: 2px 1px 0px black;
+  text-shadow: 2px 1px 0px ;
 
 font-size: 60px;
 }
@@ -92,10 +75,10 @@ color: #0F8600;
     /* background-image: url(https://i.postimg.cc/SsSc8CRp/fantasy-3281738-1920.jpg); */
     background-repeat: no-repeat;
   background-attachment: fixed;
-   background-size: cover;
+   /* background-size: cover;
      height: 100%;
      padding-top: 30px;
-     padding-bottom: 30px;
+     padding-bottom: 30px; */
      
 }
 
@@ -120,8 +103,10 @@ h2{
 }
 
 h4{
-  color: white;
+  color: black;
+
   padding-top: 20px;
+  padding-bottom: 30px;
   font-size: 40px;
 }
 
@@ -129,14 +114,9 @@ p{
   font-size: 24px;
   color: white;
 }
-.HomeBtn{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 50px;
-
+.me{
+  background-image: linear-gradient(to bottom, #0b3603, #0c3903, #0c3c04, #0d3f04, #0e4204);
 }
-
 
 
 </style>
