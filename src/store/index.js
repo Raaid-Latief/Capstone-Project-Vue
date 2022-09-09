@@ -83,6 +83,10 @@ export default createStore({
           }
           state.asc = !state.asc;
         },
+        Logout(state){
+          (state.user = ""), (state.token = "")
+        },
+      
   },
  
   actions: {    

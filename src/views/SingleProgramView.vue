@@ -93,6 +93,7 @@
     gap: 20px;
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.4);
+    
   }
   
   .cards:hover img {

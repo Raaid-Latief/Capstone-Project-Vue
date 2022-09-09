@@ -15,7 +15,7 @@
                   <option value="hypertrophy">Hypertrophy</option>
                   <option value="powerbuilding">Powerbuilding</option>
               </select>
-              <button class="btn ms-3 my-2" @click="sortPrograms">
+              <button class="btn ms-3 my-2" @click="sortProgram">
                   SORT BY NAME
               </button>
       </div>
@@ -197,6 +197,11 @@ img{
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
+  text-align: center;
+position: relative;
+    top: 20%;
+    left: 50%;
+   
 }
 
 @keyframes spin {

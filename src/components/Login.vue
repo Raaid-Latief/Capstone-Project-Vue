@@ -3,13 +3,6 @@
    <div class="login-page">
   <div class="form">
     <h1>Sign In</h1>
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
     <form onsubmit="Login(event)" class="text-center my-3">
       <input type="email    " placeholder="email" v-model="email"/>
       <input type="password" placeholder="password" v-model="password" />
@@ -68,10 +61,6 @@ export default {
     },
 },
 };  
-
-// $('.message a').click(function(){
-//    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-// });
 
 </script>
 
@@ -185,11 +174,8 @@ body {
   -moz-osx-font-smoothing: grayscale;      
 }
 
-
 .welcome{
   font-size: 50px;
 }
-
-
 
 </style>

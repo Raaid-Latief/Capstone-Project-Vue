@@ -3,7 +3,7 @@
   <div class="row">
   <div class="headings col-lg-8 col-md-8 col-sml-12">
 <h1 class="text-center mt-5">Ready to train like a pro?</h1>
-<h2 class="text-center mt-5"> Welcome to ..... Fitness</h2>
+<h2 class="text-center mt-5"> Welcome to LC Fitness</h2>
 </div>
 <div class="col-lg-4 col-md-4 text-center">
 <img  src="https://i.postimg.cc/DfSMW42V/My_project__11_-removebg-preview.png" alt="">
